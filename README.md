@@ -1,12 +1,33 @@
 # Approved Templates, Do Not Add List, & Guidance on Special Topics
 
-> README-ready Markdown converted from the uploaded PDF. The conversion prioritizes navigability for GitHub and agentic search: source pages are preserved, and approved templates are split into individual headings.
+> README-ready Markdown converted from the uploaded PDF. This enhanced version prioritizes both source fidelity and agent/copilot retrieval: source pages are preserved, approved templates are split into individual headings, and copy/paste-ready normalized template text is added while retaining original extracted wording.
+
+
+## Fidelity and Agent-Readiness Notes
+
+This version keeps the original page-by-page PDF extraction for traceability and adds agent-facing structure for retrieval and copy/paste use.
+
+- The PDF is the source of truth. The `Full Source Text by Page` section is retained so an agent can reconcile any structured template entry with the original PDF page text.
+- Template headings and the index use cleaned titles to fix PDF line-wrap artifacts such as `h alf`, `tele phone`, `Wh atsApp`, `check- in`, `car- free`, and `drop- off`. When a title was cleaned, the original extracted PDF title is preserved in the individual template record as `PDF-extracted title`.
+- Each template has a stable anchor in the form `template-###`, independent of GitHub/Markdown heading slug behavior.
+- Each template with source wording includes an `Agent-normalized template text` field that collapses PDF line breaks into copy/paste-ready text. The original line-broken blockquote remains above it for source fidelity.
+- Blank template rows from the source are explicitly labeled so an agent does not infer missing content.
+- The PDF contains one substantial embedded screenshot on source page 15; its text context is represented in the page text and summarized below. Other embedded images are small UI/link icons and are not substantive policy/template text.
+
+### Embedded Visual Inventory
+
+- **Source page 15:** Contains a screenshot demonstrating the Attribute Admin selection for `Non-local guests`, including fields for `Non-local guests distance (miles)` and `Non-local guests distance (kilometers)`, with example values shown as `3` miles and `4.8` kilometers. The surrounding text explains the generated non-local-guests policy text and the required attributes.
+- **Other pages with embedded images:** Small icon/link/attachment indicators appear on pages 1, 2, 4, 6, 7, 10, 12, 13, 16, 19, 20, 24-26, 28-32, 36-40. These are visual UI indicators rather than standalone policy/template content.
 
 ## Contents
 
+- [Fidelity and Agent-Readiness Notes](#fidelity-and-agent-readiness-notes)
+- [Embedded Visual Inventory](#embedded-visual-inventory)
 - [Do Not Add List and Guidance](#do-not-add-list-and-guidance)
 - [Approved Handwritten SCII Templates](#approved-handwritten-scii-templates)
+- [Agent Quick Index (stable anchors)](#agent-quick-index-stable-anchors)
 - [Template Index by Topic](#template-index-by-topic)
+- [Template Details](#template-details)
 - [Full Source Text by Page](#full-source-text-by-page)
 
 ## Do Not Add List and Guidance
@@ -31,184 +52,318 @@ The PDF begins with this high-level navigation:
 - Approved (Handwritten) SCII Templates
 - Managers: Request a New Template to be added to Approved Template List
 
-The original PDF text from pages 1-19 is included in [Full Source Text by Page](#full-source-text-by-page).
+The original PDF text from pages 1-44 is included in [Full Source Text by Page](#full-source-text-by-page).
 
 ## Approved Handwritten SCII Templates
 
 Total template rows extracted: **127**.
 
+### Agent Quick Index (stable anchors)
+Use the stable `template-###` anchors below for retrieval. `Has template text` means the PDF row contains standalone template wording; when it is `No`, the PDF row only contains notes/important information.
+| # | Topic | Clean title | SCII | Source page | Has template text | Anchor |
+|---:|---|---|---:|---:|:---:|---|
+| 1 | Accessibility | In-room amenity accessible by stairs (193) | 193 | 20 | Yes | [`template-001`](#template-001) |
+| 2 | Accessibility | Request room with elevator service (193) | 193 | 20 | Yes | [`template-002`](#template-002) |
+| 3 | Accessibility | Service animals advance notice (approval required) (193) | 193 | 20 | Yes | [`template-003`](#template-003) |
+| 4 | Alert (Construction) | Construction offsite but nearby with dates (193) | 193 | 20 | Yes | [`template-004`](#template-004) |
+| 5 | Alert (Cruise) | Cruise properties (193) | 193 | 21 | Yes | [`template-005`](#template-005) |
+| 6 | Alert (Noise) | Noise - Onsite event/festival - temporary notice (193) | 193 | 21 | Yes | [`template-006`](#template-006) |
+| 7 | Alert (Inspection) | Scheduled fire alarm inspection (193) | 193 | 21 | Yes | [`template-007`](#template-007) |
+| 8 | Alert (Outage) | Scheduled power/water outage (193) | 193 | 21 | Yes | [`template-008`](#template-008) |
+| 9 | Breakfast/Dining | Advance notice for dietary restrictions/food allergies (193) | 193 | 22 | Yes | [`template-009`](#template-009) |
+| 10 | Breakfast/Dining | Breakfast/half board/dinner/room only meals booked in advance (193) | 193 | 22 | Yes | [`template-010`](#template-010) |
+| 11 | Breakfast/Dining | Breakfast/dinner/half board/full board not included for children who stay free (193) | 193 | 22 | Yes | [`template-011`](#template-011) |
+| 12 | Breakfast/Dining | Breakfast for 2 Adults |  | 22 | Yes | [`template-012`](#template-012) |
+| 13 | Breakfast/Dining | Breakfast/Half Board rate plans not included for children of certain ages but can be arranged in advance on request (193) | 193 | 22 | Yes | [`template-013`](#template-013) |
+| 14 | Breakfast/Dining | Breakfast by reservation only/served in guestrooms (193) | 193 | 22 | Yes | [`template-014`](#template-014) |
+| 15 | Breakfast/Dining | Breakfast fee is changing soon (193) | 193 | 22 | Yes | [`template-015`](#template-015) |
+| 16 | Breakfast/Dining | Breakfast served in guestrooms (193) | 193 | 23 | Yes | [`template-016`](#template-016) |
+| 17 | Breakfast/Dining | Different breakfast type available temporarily (193) | 193 | 23 | Yes | [`template-017`](#template-017) |
+| 18 | Breakfast/Dining | Dinner reservations required (193) | 193 | 23 | Yes | [`template-018`](#template-018) |
+| 19 | Breakfast/Dining | Dining hours/closed for certain meals on certain dates - temporary notice (193) | 193 | 23 | Yes | [`template-019`](#template-019) |
+| 20 | Breakfast/Dining | HB/FB rates do not include drinks (193) | 193 | 23 | Yes | [`template-020`](#template-020) |
+| 21 | Breakfast/Dining | Meals by reservation only (193) | 193 | 24 | Yes | [`template-021`](#template-021) |
+| 22 | Breakfast/Dining | Meals during Ramadan (193) | 193 | 24 | Yes | [`template-022`](#template-022) |
+| 23 | Breakfast/Dining | Offsite breakfast location (193) | 193 | 24 | Yes | [`template-023`](#template-023) |
+| 24 | Breakfast/Dining | Room service hours (191) | 191 | 24 | Yes | [`template-024`](#template-024) |
+| 25 | Check-in/Check-out | After hours check-in/alternate check-in location (over 64 characters) (193) | 193 | 24 | Yes | [`template-025`](#template-025) |
+| 26 | Check-in/Check-out | Check-in time for Jewish holidays (193) | 193 | 24 | Yes | [`template-026`](#template-026) |
+| 27 | Check-in/Check-out | Check in by specific time to receive dinner (193) | 193 | 24 | Yes | [`template-027`](#template-027) |
+| 28 | Breakfast/Dining | Untitled/blank source row |  | 25 | No | [`template-028`](#template-028) |
+| 29 | Check-in/Check-out | City homestay services for foreign tourists (193) | 193 | 25 | Yes | [`template-029`](#template-029) |
+| 30 | Check-in/Check-out | Guests must confirm their arrival time on the check-in day via text/WhatsApp/telephone (193) | 193 | 25 | Yes | [`template-030`](#template-030) |
+| 31 | Check-in/Check-out | Guests must contact the property in advance only by telephone/text/WhatsApp to arrange check-in (193) | 193 | 25 | Yes | [`template-031`](#template-031) |
+| 32 | Check-in/Check-out | Property will contact the guest in advance only by telephone/text/WhatsApp with check-in details (193) | 193 | 25 | Yes | [`template-032`](#template-032) |
+| 33 | Check-in/Check-out | Curfew time (191) | 191 | 26 | Yes | [`template-033`](#template-033) |
+| 34 | Check-in/Check-out | Exterior telephone, doorbell, intercom (193) | 193 | 26 | Yes | [`template-034`](#template-034) |
+| 35 | Check-in/Check-out | Front desk/reception additional time/day range (193) | 193 | 26 | Yes | [`template-035`](#template-035) |
+| 36 | Check-in/Check-out | Check-in and check-out additional time/day range (193) | 193 | 26 | Yes | [`template-036`](#template-036) |
+| 37 | Check-in/Check-out | Minimum check-in age is different for certain dates (193) | 193 | 27 | Yes | [`template-037`](#template-037) |
+| 38 | Check-in/Check-out | Same-day bookings (193) | 193 | 27 | Yes | [`template-038`](#template-038) |
+| 39 | Deposits/Payments | City Tax in Langkawi, MYS (192) | 192 | 27 | Yes | [`template-039`](#template-039) |
+| 40 | Deposits/Payments | Credit card fee required for specific card types (192) | 192 | 27 | Yes | [`template-040`](#template-040) |
+| 41 | Deposits/Payments | Deposit applies for local guests only (192) | 192 | 27 | Yes | [`template-041`](#template-041) |
+| 42 | Deposits/Payments | Reservation deposit payable by secure link after booking (193) | 193 | 27 | Yes | [`template-042`](#template-042) |
+| 43 | Deposits/Payments | Deposit refunded after check-out (192) | 192 | 28 | Yes | [`template-043`](#template-043) |
+| 44 | Deposits/Payments | Deposit varies by room type (192) | 192 | 28 | Yes | [`template-044`](#template-044) |
+| 45 | Deposits/Payments | Deposit applies to specific room types only (192) | 192 | 28 | Yes | [`template-045`](#template-045) |
+| 46 | Deposits/Payments | Prepaid credit/debit/gift cards not accepted (multiple types) (193) | 193 | 29 | Yes | [`template-046`](#template-046) |
+| 47 | Facility and Service Fees | Fee/advance notice for luggage storage (193) | 193 | 29 | Yes | [`template-047`](#template-047) |
+| 48 | Facility and Service Fees | Mandatory cleaning fee varies by room type (192) | 192 | 29 | Yes | [`template-048`](#template-048) |
+| 49 | Facility and Service Fees | Mandatory fee for certain length of stays only (192) | 192 | 29 | Yes | [`template-049`](#template-049) |
+| 50 | Facility and Service Fees | Mandatory Transfer Fees vary seasonally (192) | 192 | 29 | Yes | [`template-050`](#template-050) |
+| 51 | Facility and Service Fees | Multiple mandatory transfer fees (192) | 192 | 30 | Yes | [`template-051`](#template-051) |
+| 52 | Facility and Service Fees | Pool/spa/spa tub fee required per entry or per hour (192) | 192 | 30 | Yes | [`template-052`](#template-052) |
+| 53 | Facility and Service Fees | Pool fee varies (192) | 192 | 30 | Yes | [`template-053`](#template-053) |
+| 54 | Gala Dinner Fees | Mandatory gala dinner fees included for certain room types (192) (Use if the number of guests included varies by room type) | 192 | 31 | Yes | [`template-054`](#template-054) |
+| 55 | Gala Dinner Fees | Mandatory gala dinner fees for additional guests (192) | 192 | 31 | Yes | [`template-055`](#template-055) |
+| 56 | Gala Dinner Fees | Optional gala dinner fees, must be booked in advance (192) | 192 | 31 | Yes | [`template-056`](#template-056) |
+| 57 | Identification | Required ID for all guests (193) | 193 | 31 | Yes | [`template-057`](#template-057) |
+| 58 | Identification | Alternative check-in age for guests with a military ID (193) | 193 | 31 | Yes | [`template-058`](#template-058) |
+| 59 | Identification | Chinese nationals (properties in China only) (193) | 193 | 31 | Yes | [`template-059`](#template-059) |
+| 60 | Identification (NEW, added April 20) | CURP Required (properties in Mexico only) (193) | 193 | 32 | Yes | [`template-060`](#template-060) |
+| 61 | Identification | Hajj permit (193) (Saudi Arabia properties only, on request) | 193 | 32 | Yes | [`template-061`](#template-061) |
+| 62 | Identification | Hostel organization membership card (193) | 193 | 32 | Yes | [`template-062`](#template-062) |
+| 63 | Identification | Inner Line Permit Required (193) | 193 | 32 | Yes | [`template-063`](#template-063) |
+| 64 | Identification | Same booking name/matching ID policy (193) | 193 | 32 | Yes | [`template-064`](#template-064) |
+| 65 | Identification | PAN cards not accepted (193) | 193 | 32 | Yes | [`template-065`](#template-065) |
+| 66 | Identification | Passport only (193) | 193 | 33 | Yes | [`template-066`](#template-066) |
+| 67 | Not Available due to Renovations/Closed (Temporary) | Amenity not available due to renovations(193) | 193 | 33 | Yes | [`template-067`](#template-067) |
+| 68 | Not Available/Closed (Temporary Dates/Holidays) | Amenity closed for specific hours/holidays - Temporary notice (193) | 193 | 33 | Yes | [`template-068`](#template-068) |
+| 69 | Not Available/Closed (Temporary Dates/Holidays) | Dining/bar hours on certain days of the week/holidays- Temporary closure notice (193) | 193 | 33 | Yes | [`template-069`](#template-069) |
+| 70 | Not Available/Closed (Temporary Dates/Holidays) | Dining hours/closed for certain meals/holidays - Temporary notice (193) | 193 | 33 | Yes | [`template-070`](#template-070) |
+| 71 | Not Available/Closed (Temporary Dates/Holidays) | Special event - Amenity closed for certain hours/holidays - Temporary notice (hours) |  | 34 | Yes | [`template-071`](#template-071) |
+| 72 | Not Available/Closed (Temporary Dates/Holidays) | Public bath closed - Temporary notice (193) | 193 | 34 | Yes | [`template-072`](#template-072) |
+| 73 | Other | Limited All-Inclusive Plan beverage service (193) | 193 | 34 | Yes | [`template-073`](#template-073) |
+| 74 | Other | Rooms in an annex building (193) | 193 | 34 | Yes | [`template-074`](#template-074) |
+| 75 | Other | Seasonal discount cards (193) | 193 | 35 | Yes | [`template-075`](#template-075) |
+| 76 | Parking | Extended parking limit (193) | 193 | 35 | Yes | [`template-076`](#template-076) |
+| 77 | Parking | Extended parking not available (191) | 191 | 35 | Yes | [`template-077`](#template-077) |
+| 78 | Parking | Parking fee changing (192) | 192 | 35 | Yes | [`template-078`](#template-078) |
+| 79 | Parking | Parking fee varies (192) | 192 | 35 | Yes | [`template-079`](#template-079) |
+| 80 | Parking | Limited free parking (192) | 192 | 35 | Yes | [`template-080`](#template-080) |
+| 81 | Parking | Motorcycle parking not permitted (191) | 191 | 35 | Yes | [`template-081`](#template-081) |
+| 82 | Parking | Parking available on a limited basis (191) | 191 | 35 | Yes | [`template-082`](#template-082) |
+| 83 | Parking | Parking fee is changing (192) | 192 | 36 | Yes | [`template-083`](#template-083) |
+| 84 | Parking | Parking for large vehicles not permitted (191) | 191 | 36 | Yes | [`template-084`](#template-084) |
+| 85 | Parking | Parking fee for EV vehicles (192) | 192 | 36 | Yes | [`template-085`](#template-085) |
+| 86 | Policies | Access to partner facilities (191) | 191 | 36 | Yes | [`template-086`](#template-086) |
+| 87 | Policies | Age policy for groups of guests (193) | 193 | 36 | Yes | [`template-087`](#template-087) |
+| 88 | Policies | Cooking not permitted (191) | 191 | 36 | Yes | [`template-088`](#template-088) |
+| 89 | Policies | Dress code (191) | 191 | 36 | Yes | [`template-089`](#template-089) |
+| 90 | Policies | Drones or surveillance devices not allowed (191) | 191 | 36 | Yes | [`template-090`](#template-090) |
+| 91 | Policies | Children can't stay in dormitories (193) | 193 | 36 | Yes | [`template-091`](#template-091) |
+| 92 | Policies | Club/Executive lounge access for children allowed (time frame) (191) | 191 | 37 | Yes | [`template-092`](#template-092) |
+| 93 | Policies | Minors must be accompanied by an adult (193) | 193 | 37 | Yes | [`template-093`](#template-093) |
+| 94 | Policies | No alcohol served on Poya Day (191) | 191 | 37 | Yes | [`template-094`](#template-094) |
+| 95 | Policies | No filming/photo shoots (191) | 191 | 37 | Yes | [`template-095`](#template-095) |
+| 96 | Policies | No smoking (penalty applies) (191) | 191 | 37 | Yes | [`template-096`](#template-096) |
+| 97 | Policies | No visitors after designated time (191) | 191 | 37 | Yes | [`template-097`](#template-097) |
+| 98 | Policies | Outside food prohibited (191) | 191 | 38 | Yes | [`template-098`](#template-098) |
+| 99 | Policies | Package delivery policy (191) | 191 | 38 | Yes | [`template-099`](#template-099) |
+| 100 | Policies | Pets not permitted in public areas (191) | 191 | 38 | Yes | [`template-100`](#template-100) |
+| 101 | Policies | Pet vaccination record required (193) | 193 | 38 | Yes | [`template-101`](#template-101) |
+| 102 | Policies | Property name change upcoming (193) | 193 | 38 | Yes | [`template-102`](#template-102) |
+| 103 | Policies | Texas firearm policies (properties in Texas only) (191) | 191 | 38 | Yes | [`template-103`](#template-103) |
+| 104 | Policies | Vacation rental property registry numbers (191) | 191 | 38 | Yes | [`template-104`](#template-104) |
+| 105 | Pool/Spa/Fitness | Age/time restrictions for pool/spa (191) | 191 | 38 | Yes | [`template-105`](#template-105) |
+| 106 | Pool/Spa/Fitness | Age restrictions for public baths (191) | 191 | 39 | Yes | [`template-106`](#template-106) |
+| 107 | Pool/Spa/Fitness | Appropriate swimwear required in pool (191) | 191 | 39 | Yes | [`template-107`](#template-107) |
+| 108 | Pool/Spa/Fitness | Access to amenity by reservation only (pool/fitness center/spa facility/spa tub) (191) | 191 | 39 | Yes | [`template-108`](#template-108) |
+| 109 | Pool/Spa/Fitness | Hasema/burkini not allowed in pool (191) OR Hasema/burkini required in pool area (191) | 191 | 39 | Yes | [`template-109`](#template-109) |
+| 110 | Pool/Spa/Fitness | Pool hours vary (191) | 191 | 39 | Yes | [`template-110`](#template-110) |
+| 111 | Pool/Spa/Fitness | Swim cap required (191) | 191 | 39 | Yes | [`template-111`](#template-111) |
+| 112 | Pool/Spa/Fitness | Swimsuits not allowed in public baths/hot spring (191) | 191 | 40 | Yes | [`template-112`](#template-112) |
+| 113 | Room Amenities | Buckets for bathing (191) | 191 | 40 | Yes | [`template-113`](#template-113) |
+| 114 | Room Amenities | Central AC/Heating available (191) | 191 | 40 | Yes | [`template-114`](#template-114) |
+| 115 | Room Amenities | Disposable personal items not available (193) | 193 | 40 | Yes | [`template-115`](#template-115) |
+| 116 | Room Amenities | Disposable personal items available at front desk (191) | 191 | 40 | Yes | [`template-116`](#template-116) |
+| 117 | Room Amenities | Dry/composting toilet (191) | 191 | 40 | Yes | [`template-117`](#template-117) |
+| 118 | Room Amenities | Housekeeping available based on length of stay (191) | 191 | 41 | Yes | [`template-118`](#template-118) |
+| 119 | Transportation | 4x4 vehicle required (193) | 193 | 41 | Yes | [`template-119`](#template-119) |
+| 120 | Transportation | Speedboat template (193) | 193 | 41 | Yes | [`template-120`](#template-120) |
+| 121 | Transportation | Domestic flight template - Maldives (193) | 193 | 41 | Yes | [`template-121`](#template-121) |
+| 122 | Transportation | Seaplane template - Maldives (193) | 193 | 41 | Yes | [`template-122`](#template-122) |
+| 123 | Transportation | Shuttle pickup from specific airport/train station (193) | 193 | 42 | Yes | [`template-123`](#template-123) |
+| 124 | Transportation | Theme park shuttle hours (191) | 191 | 42 | Yes | [`template-124`](#template-124) |
+| 125 | Not Available/Closed (Temporary Dates/Holidays) | Theme park shuttle not available (193) | 193 | 42 | No | [`template-125`](#template-125) |
+| 126 | Transportation | Properties in car-free zones (193) | 193 | 42 | Yes | [`template-126`](#template-126) |
+| 127 | Transportation | Train station shuttle drop-off/specific days information (193) | 193 | 42 | Yes | [`template-127`](#template-127) |
+
 ### Template Index by Topic
 
 #### Accessibility
-- [1. In-room amenity accessible by stairs (193)](#template-1-in-room-amenity-accessible-by-stairs-193)
-- [2. Request room with elevator service (193)](#template-2-request-room-with-elevator-service-193)
-- [3. Service animals advance notice (approval required) (193)](#template-3-service-animals-advance-notice-approval-required-193)
+- [1. In-room amenity accessible by stairs (193)](#template-001)
+- [2. Request room with elevator service (193)](#template-002)
+- [3. Service animals advance notice (approval required) (193)](#template-003)
 
 #### Alert (Construction)
-- [4. Construction offsite but nearby with dates (193)](#template-4-construction-offsite-but-nearby-with-dates-193)
+- [4. Construction offsite but nearby with dates (193)](#template-004)
 
 #### Alert (Cruise)
-- [5. Cruise properties (193)](#template-5-cruise-properties-193)
+- [5. Cruise properties (193)](#template-005)
 
 #### Alert (Inspection)
-- [7. Scheduled fire alarm inspection (193)](#template-7-scheduled-fire-alarm-inspection-193)
+- [7. Scheduled fire alarm inspection (193)](#template-007)
 
 #### Alert (Noise)
-- [6. Noise - Onsite event/festival - temporary notice (193)](#template-6-noise---onsite-eventfestival---temporary-notice-193)
+- [6. Noise - Onsite event/festival - temporary notice (193)](#template-006)
 
 #### Alert (Outage)
-- [8. Scheduled power/water outage (193)](#template-8-scheduled-powerwater-outage-193)
+- [8. Scheduled power/water outage (193)](#template-008)
 
 #### Breakfast/Dining
-- [9. Advance notice for dietary restrictions/food allergies (193)](#template-9-advance-notice-for-dietary-restrictionsfood-allergies-193)
-- [10. Breakfast/half board/dinner/room only meals booked in advance (193)](#template-10-breakfasthalf-boarddinnerroom-only-meals-booked-in-advance-193)
-- [11. Breakfast/dinner/h alf board/full board not included for children who stay free (193)](#template-11-breakfastdinnerh-alf-boardfull-board-not-included-for-children-who-stay-free-193)
-- [12. Breakfast for 2 Adults](#template-12-breakfast-for-2-adults)
-- [13. Breakfast/Half Board rate plans not included for children of certain ages but can be arranged in advance on request (193)](#template-13-breakfasthalf-board-rate-plans-not-included-for-children-of-certain-ages-but-can)
-- [14. Breakfast by reservation only/served in guestrooms (193)](#template-14-breakfast-by-reservation-onlyserved-in-guestrooms-193)
-- [15. Breakfast fee is changing soon (193)](#template-15-breakfast-fee-is-changing-soon-193)
-- [16. Breakfast served in guestrooms (193)](#template-16-breakfast-served-in-guestrooms-193)
-- [17. Different breakfast type available temporarily (193)](#template-17-different-breakfast-type-available-temporarily-193)
-- [18. Dinner reservations required (193)](#template-18-dinner-reservations-required-193)
-- [19. Dining hours/closed for certain meals on certain dates - temporary notice (193)](#template-19-dining-hoursclosed-for-certain-meals-on-certain-dates---temporary-notice-193)
-- [20. HB/FB rates do not include drinks (193)](#template-20-hbfb-rates-do-not-include-drinks-193)
-- [21. Meals by reservation only (193)](#template-21-meals-by-reservation-only-193)
-- [22. Meals during Ramadan (193)](#template-22-meals-during-ramadan-193)
-- [23. Offsite breakfast location (193)](#template-23-offsite-breakfast-location-193)
-- [24. Room service hours (191)](#template-24-room-service-hours-191)
-- [28. ](#template-28-section)
+- [9. Advance notice for dietary restrictions/food allergies (193)](#template-009)
+- [10. Breakfast/half board/dinner/room only meals booked in advance (193)](#template-010)
+- [11. Breakfast/dinner/half board/full board not included for children who stay free (193)](#template-011)
+- [12. Breakfast for 2 Adults](#template-012)
+- [13. Breakfast/Half Board rate plans not included for children of certain ages but can be arranged in advance on request (193)](#template-013)
+- [14. Breakfast by reservation only/served in guestrooms (193)](#template-014)
+- [15. Breakfast fee is changing soon (193)](#template-015)
+- [16. Breakfast served in guestrooms (193)](#template-016)
+- [17. Different breakfast type available temporarily (193)](#template-017)
+- [18. Dinner reservations required (193)](#template-018)
+- [19. Dining hours/closed for certain meals on certain dates - temporary notice (193)](#template-019)
+- [20. HB/FB rates do not include drinks (193)](#template-020)
+- [21. Meals by reservation only (193)](#template-021)
+- [22. Meals during Ramadan (193)](#template-022)
+- [23. Offsite breakfast location (193)](#template-023)
+- [24. Room service hours (191)](#template-024)
+- [28. Untitled/blank source row](#template-028)
 
 #### Check-in/Check-out
-- [25. After hours check- in/alternate check- in location (over 64 characters) (193)](#template-25-after-hours-check--inalternate-check--in-location-over-64-characters-193)
-- [26. Check-in time for Jewish holidays (193)](#template-26-check-in-time-for-jewish-holidays-193)
-- [27. Check in by specifictimeto receive dinner (193)](#template-27-check-in-by-specifictimeto-receive-dinner-193)
-- [29. City homestay services for foreign tourists (193)](#template-29-city-homestay-services-for-foreign-tourists-193)
-- [30. Guests must confirm their arrival time on the check- in day via text/WhatsApp/tele phone (193)](#template-30-guests-must-confirm-their-arrival-time-on-the-check--in-day-via-textwhatsapptele)
-- [31. Guests must contact the property in advance only by telephone/text/Wh atsApp to arrange check-in (193)](#template-31-guests-must-contact-the-property-in-advance-only-by-telephonetextwh-atsapp-to-ar)
-- [32. Property will contact the guest in advance only by telephone/text/Wh atsapp with check- in details (193)](#template-32-property-will-contact-the-guest-in-advance-only-by-telephonetextwh-atsapp-with-c)
-- [33. Curfew time (191)](#template-33-curfew-time-191)
-- [34. Exterior telephone, doorbell, intercom (193)](#template-34-exterior-telephone-doorbell-intercom-193)
-- [35. Front desk/reception additional time/day range (193)](#template-35-front-deskreception-additional-timeday-range-193)
-- [36. Check-in and check-out additional time/day range (193)](#template-36-check-in-and-check-out-additional-timeday-range-193)
-- [37. Minimum check-in age is different for certain dates (193)](#template-37-minimum-check-in-age-is-different-for-certain-dates-193)
-- [38. Same-day bookings (193)](#template-38-same-day-bookings-193)
+- [25. After hours check-in/alternate check-in location (over 64 characters) (193)](#template-025)
+- [26. Check-in time for Jewish holidays (193)](#template-026)
+- [27. Check in by specific time to receive dinner (193)](#template-027)
+- [29. City homestay services for foreign tourists (193)](#template-029)
+- [30. Guests must confirm their arrival time on the check-in day via text/WhatsApp/telephone (193)](#template-030)
+- [31. Guests must contact the property in advance only by telephone/text/WhatsApp to arrange check-in (193)](#template-031)
+- [32. Property will contact the guest in advance only by telephone/text/WhatsApp with check-in details (193)](#template-032)
+- [33. Curfew time (191)](#template-033)
+- [34. Exterior telephone, doorbell, intercom (193)](#template-034)
+- [35. Front desk/reception additional time/day range (193)](#template-035)
+- [36. Check-in and check-out additional time/day range (193)](#template-036)
+- [37. Minimum check-in age is different for certain dates (193)](#template-037)
+- [38. Same-day bookings (193)](#template-038)
 
 #### Deposits/Payments
-- [39. City Tax in Langkawi, MYS (192)](#template-39-city-tax-in-langkawi-mys-192)
-- [40. Credit card fee required for specific card types (192)](#template-40-credit-card-fee-required-for-specific-card-types-192)
-- [41. Deposit applies for local guests only (192)](#template-41-deposit-applies-for-local-guests-only-192)
-- [42. Reservation deposit payable by secure link after booking (193)](#template-42-reservation-deposit-payable-by-secure-link-after-booking-193)
-- [43. Deposit refunded after check-out (192)](#template-43-deposit-refunded-after-check-out-192)
-- [44. Deposit varies by room type (192)](#template-44-deposit-varies-by-room-type-192)
-- [45. Deposit applies to specific room types only (192)](#template-45-deposit-applies-to-specific-room-types-only-192)
-- [46. Prepaid credit/debit/gift cards not accepted (multiple types) (193)](#template-46-prepaid-creditdebitgift-cards-not-accepted-multiple-types-193)
+- [39. City Tax in Langkawi, MYS (192)](#template-039)
+- [40. Credit card fee required for specific card types (192)](#template-040)
+- [41. Deposit applies for local guests only (192)](#template-041)
+- [42. Reservation deposit payable by secure link after booking (193)](#template-042)
+- [43. Deposit refunded after check-out (192)](#template-043)
+- [44. Deposit varies by room type (192)](#template-044)
+- [45. Deposit applies to specific room types only (192)](#template-045)
+- [46. Prepaid credit/debit/gift cards not accepted (multiple types) (193)](#template-046)
 
 #### Facility and Service Fees
-- [47. Fee/advance notice for luggage storage (193)](#template-47-feeadvance-notice-for-luggage-storage-193)
-- [48. Mandatory cleaning fee varies by room type (192)](#template-48-mandatory-cleaning-fee-varies-by-room-type-192)
-- [49. Mandatory fee for certain length of stays only (192)](#template-49-mandatory-fee-for-certain-length-of-stays-only-192)
-- [50. Mandatory Transfer Fees vary seasonally (192)](#template-50-mandatory-transfer-fees-vary-seasonally-192)
-- [51. Multiple mandatory transfer fees (192)](#template-51-multiple-mandatory-transfer-fees-192)
-- [52. Pool/spa/spa tub fee required per entry or per hour (192)](#template-52-poolspaspa-tub-fee-required-per-entry-or-per-hour-192)
-- [53. Pool fee varies (192)](#template-53-pool-fee-varies-192)
+- [47. Fee/advance notice for luggage storage (193)](#template-047)
+- [48. Mandatory cleaning fee varies by room type (192)](#template-048)
+- [49. Mandatory fee for certain length of stays only (192)](#template-049)
+- [50. Mandatory Transfer Fees vary seasonally (192)](#template-050)
+- [51. Multiple mandatory transfer fees (192)](#template-051)
+- [52. Pool/spa/spa tub fee required per entry or per hour (192)](#template-052)
+- [53. Pool fee varies (192)](#template-053)
 
 #### Gala Dinner Fees
-- [54. Mandatory gala dinner fees included for certain room types (192) (Use if the number of guests included varies by room type)](#template-54-mandatory-gala-dinner-fees-included-for-certain-room-types-192-use-if-the-number)
-- [55. Mandatory gala dinner fees for additional guests (192)](#template-55-mandatory-gala-dinner-fees-for-additional-guests-192)
-- [56. Optional gala dinner fees, must be booked in advance (192)](#template-56-optional-gala-dinner-fees-must-be-booked-in-advance-192)
+- [54. Mandatory gala dinner fees included for certain room types (192) (Use if the number of guests included varies by room type)](#template-054)
+- [55. Mandatory gala dinner fees for additional guests (192)](#template-055)
+- [56. Optional gala dinner fees, must be booked in advance (192)](#template-056)
 
 #### Identification
-- [57. Required ID for all guests (193)](#template-57-required-id-for-all-guests-193)
-- [58. Alternative check-in age for guests with a military ID (193)](#template-58-alternative-check-in-age-for-guests-with-a-military-id-193)
-- [59. Chinese nationals (properties in China only) (193)](#template-59-chinese-nationals-properties-in-china-only-193)
-- [61. Hajj permit (193) (Saudi Arabia properties only, on request)](#template-61-hajj-permit-193-saudi-arabia-properties-only-on-request)
-- [62. Hostel organization membership card (193)](#template-62-hostel-organization-membership-card-193)
-- [63. Inner Line Permit Required (193)](#template-63-inner-line-permit-required-193)
-- [64. Same booking name/matching ID policy (193)](#template-64-same-booking-namematching-id-policy-193)
-- [65. PAN cards not accepted(193)](#template-65-pan-cards-not-accepted193)
-- [66. Passport only (193)](#template-66-passport-only-193)
+- [57. Required ID for all guests (193)](#template-057)
+- [58. Alternative check-in age for guests with a military ID (193)](#template-058)
+- [59. Chinese nationals (properties in China only) (193)](#template-059)
+- [61. Hajj permit (193) (Saudi Arabia properties only, on request)](#template-061)
+- [62. Hostel organization membership card (193)](#template-062)
+- [63. Inner Line Permit Required (193)](#template-063)
+- [64. Same booking name/matching ID policy (193)](#template-064)
+- [65. PAN cards not accepted (193)](#template-065)
+- [66. Passport only (193)](#template-066)
 
 #### Identification (NEW, added April 20)
-- [60. CURP Required (properties in Mexico only) (193)](#template-60-curp-required-properties-in-mexico-only-193)
+- [60. CURP Required (properties in Mexico only) (193)](#template-060)
 
 #### Not Available due to Renovations/Closed (Temporary)
-- [67. Amenity not available due to renovations(193)](#template-67-amenity-not-available-due-to-renovations193)
+- [67. Amenity not available due to renovations(193)](#template-067)
 
 #### Not Available/Closed (Temporary Dates/Holidays)
-- [68. Amenity closed for specific hours/holidays - Temporary notice (193)](#template-68-amenity-closed-for-specific-hoursholidays---temporary-notice-193)
-- [69. Dining/bar hours on certain days of the week/holidays- Temporary closure notice (193)](#template-69-diningbar-hours-on-certain-days-of-the-weekholidays--temporary-closure-notice-19)
-- [70. Dining hours/closed for certain meals/holidays - Temporary notice (193)](#template-70-dining-hoursclosed-for-certain-mealsholidays---temporary-notice-193)
-- [71. Special event - Amenity closed for certain hours/holidays - Temporary notice (hours)](#template-71-special-event---amenity-closed-for-certain-hoursholidays---temporary-notice-hour)
-- [72. Public bath closed - Temporary notice (193)](#template-72-public-bath-closed---temporary-notice-193)
-- [125. Theme park shuttle not available (193)](#template-125-theme-park-shuttle-not-available-193)
+- [68. Amenity closed for specific hours/holidays - Temporary notice (193)](#template-068)
+- [69. Dining/bar hours on certain days of the week/holidays- Temporary closure notice (193)](#template-069)
+- [70. Dining hours/closed for certain meals/holidays - Temporary notice (193)](#template-070)
+- [71. Special event - Amenity closed for certain hours/holidays - Temporary notice (hours)](#template-071)
+- [72. Public bath closed - Temporary notice (193)](#template-072)
+- [125. Theme park shuttle not available (193)](#template-125)
 
 #### Other
-- [73. Limited All- Inclusive Plan beverage service (193)](#template-73-limited-all--inclusive-plan-beverage-service-193)
-- [74. Rooms in an annex building (193)](#template-74-rooms-in-an-annex-building-193)
-- [75. Seasonal discount cards (193)](#template-75-seasonal-discount-cards-193)
+- [73. Limited All-Inclusive Plan beverage service (193)](#template-073)
+- [74. Rooms in an annex building (193)](#template-074)
+- [75. Seasonal discount cards (193)](#template-075)
 
 #### Parking
-- [76. Extended parking limit (193)](#template-76-extended-parking-limit-193)
-- [77. Extended parking not available (191)](#template-77-extended-parking-not-available-191)
-- [78. Parking fee changing (192)](#template-78-parking-fee-changing-192)
-- [79. Parking fee varies (192)](#template-79-parking-fee-varies-192)
-- [80. Limited free parking (192)](#template-80-limited-free-parking-192)
-- [81. Motorcycle parking not permitted (191)](#template-81-motorcycle-parking-not-permitted-191)
-- [82. Parkingavailable on a limited basis (191)](#template-82-parkingavailable-on-a-limited-basis-191)
-- [83. Parking fee is changing (192)](#template-83-parking-fee-is-changing-192)
-- [84. Parking for large vehicles not permitted (191)](#template-84-parking-for-large-vehicles-not-permitted-191)
-- [85. Parking fee for EV vehicles (192)](#template-85-parking-fee-for-ev-vehicles-192)
+- [76. Extended parking limit (193)](#template-076)
+- [77. Extended parking not available (191)](#template-077)
+- [78. Parking fee changing (192)](#template-078)
+- [79. Parking fee varies (192)](#template-079)
+- [80. Limited free parking (192)](#template-080)
+- [81. Motorcycle parking not permitted (191)](#template-081)
+- [82. Parking available on a limited basis (191)](#template-082)
+- [83. Parking fee is changing (192)](#template-083)
+- [84. Parking for large vehicles not permitted (191)](#template-084)
+- [85. Parking fee for EV vehicles (192)](#template-085)
 
 #### Policies
-- [86. Access to partner facilities (191)](#template-86-access-to-partner-facilities-191)
-- [87. Age policy for groups of guests (193)](#template-87-age-policy-for-groups-of-guests-193)
-- [88. Cooking not permitted (191)](#template-88-cooking-not-permitted-191)
-- [89. Dress code (191)](#template-89-dress-code-191)
-- [90. Drones or surveillance devices not allowed (191)](#template-90-drones-or-surveillance-devices-not-allowed-191)
-- [91. Children can't stay in dormitories (193)](#template-91-children-cant-stay-in-dormitories-193)
-- [92. Club/Executive lounge access for children allowed (time frame) (191)](#template-92-clubexecutive-lounge-access-for-children-allowed-time-frame-191)
-- [93. Minors must be accompanied by an adult (193)](#template-93-minors-must-be-accompanied-by-an-adult-193)
-- [94. No alcohol served on Poya Day (191)](#template-94-no-alcohol-served-on-poya-day-191)
-- [95. No filming/photo shoots (191)](#template-95-no-filmingphoto-shoots-191)
-- [96. No smoking (penalty applies) (191)](#template-96-no-smoking-penalty-applies-191)
-- [97. No visitors after designated time (191)](#template-97-no-visitors-after-designated-time-191)
-- [98. Outside food prohibited (191)](#template-98-outside-food-prohibited-191)
-- [99. Package delivery policy (191)](#template-99-package-delivery-policy-191)
-- [100. Pets not permitted in public areas (191)](#template-100-pets-not-permitted-in-public-areas-191)
-- [101. Pet vaccination record required (193)](#template-101-pet-vaccination-record-required-193)
-- [102. Property name change upcoming (193)](#template-102-property-name-change-upcoming-193)
-- [103. Texas firearm policies (properties in Texas only) (191)](#template-103-texas-firearm-policies-properties-in-texas-only-191)
-- [104. Vacation rental property registry numbers (191)](#template-104-vacation-rental-property-registry-numbers-191)
+- [86. Access to partner facilities (191)](#template-086)
+- [87. Age policy for groups of guests (193)](#template-087)
+- [88. Cooking not permitted (191)](#template-088)
+- [89. Dress code (191)](#template-089)
+- [90. Drones or surveillance devices not allowed (191)](#template-090)
+- [91. Children can't stay in dormitories (193)](#template-091)
+- [92. Club/Executive lounge access for children allowed (time frame) (191)](#template-092)
+- [93. Minors must be accompanied by an adult (193)](#template-093)
+- [94. No alcohol served on Poya Day (191)](#template-094)
+- [95. No filming/photo shoots (191)](#template-095)
+- [96. No smoking (penalty applies) (191)](#template-096)
+- [97. No visitors after designated time (191)](#template-097)
+- [98. Outside food prohibited (191)](#template-098)
+- [99. Package delivery policy (191)](#template-099)
+- [100. Pets not permitted in public areas (191)](#template-100)
+- [101. Pet vaccination record required (193)](#template-101)
+- [102. Property name change upcoming (193)](#template-102)
+- [103. Texas firearm policies (properties in Texas only) (191)](#template-103)
+- [104. Vacation rental property registry numbers (191)](#template-104)
 
 #### Pool/Spa/Fitness
-- [105. Age/time restrictions for pool/spa (191)](#template-105-agetime-restrictions-for-poolspa-191)
-- [106. Age restrictions for public baths (191)](#template-106-age-restrictions-for-public-baths-191)
-- [107. Appropriate swimwear required in pool (191)](#template-107-appropriate-swimwear-required-in-pool-191)
-- [108. Access to amenity by reservation only (pool/fitness center/spa facility/spa tub) (191)](#template-108-access-to-amenity-by-reservation-only-poolfitness-centerspa-facilityspa-tub-191)
-- [109. Hasema/burkini not allowed in pool (191) OR Hasema/burkini required in pool area (191)](#template-109-hasemaburkini-not-allowed-in-pool-191-or-hasemaburkini-required-in-pool-area-191)
-- [110. Pool hours vary (191)](#template-110-pool-hours-vary-191)
-- [111. Swim cap required (191)](#template-111-swim-cap-required-191)
-- [112. Swimsuits not allowed in public baths/hot spring (191)](#template-112-swimsuits-not-allowed-in-public-bathshot-spring-191)
+- [105. Age/time restrictions for pool/spa (191)](#template-105)
+- [106. Age restrictions for public baths (191)](#template-106)
+- [107. Appropriate swimwear required in pool (191)](#template-107)
+- [108. Access to amenity by reservation only (pool/fitness center/spa facility/spa tub) (191)](#template-108)
+- [109. Hasema/burkini not allowed in pool (191) OR Hasema/burkini required in pool area (191)](#template-109)
+- [110. Pool hours vary (191)](#template-110)
+- [111. Swim cap required (191)](#template-111)
+- [112. Swimsuits not allowed in public baths/hot spring (191)](#template-112)
 
 #### Room Amenities
-- [113. Buckets for bathing (191)](#template-113-buckets-for-bathing-191)
-- [114. Central AC/Heating available (191)](#template-114-central-acheating-available-191)
-- [115. Disposable personal items not available (193)](#template-115-disposable-personal-items-not-available-193)
-- [116. Disposable personal items available at front desk (191)](#template-116-disposable-personal-items-available-at-front-desk-191)
-- [117. Dry/composting toilet (191)](#template-117-drycomposting-toilet-191)
-- [118. Housekeeping available based on length of stay (191)](#template-118-housekeeping-available-based-on-length-of-stay-191)
+- [113. Buckets for bathing (191)](#template-113)
+- [114. Central AC/Heating available (191)](#template-114)
+- [115. Disposable personal items not available (193)](#template-115)
+- [116. Disposable personal items available at front desk (191)](#template-116)
+- [117. Dry/composting toilet (191)](#template-117)
+- [118. Housekeeping available based on length of stay (191)](#template-118)
 
 #### Transportation
-- [119. 4x4 vehicle required (193)](#template-119-4x4-vehicle-required-193)
-- [120. Speedboat template (193)](#template-120-speedboat-template-193)
-- [121. Domestic flight template - Maldives (193)](#template-121-domestic-flight-template---maldives-193)
-- [122. Seaplane template - Maldives (193)](#template-122-seaplane-template---maldives-193)
-- [123. Shuttle pickup from specific airport/train station (193)](#template-123-shuttle-pickup-from-specific-airporttrain-station-193)
-- [124. Theme park shuttle hours (191)](#template-124-theme-park-shuttle-hours-191)
-- [126. Properties in car- free zones (193)](#template-126-properties-in-car--free-zones-193)
-- [127. Train station shuttle drop- off/specific days information (193)](#template-127-train-station-shuttle-drop--offspecific-days-information-193)
+- [119. 4x4 vehicle required (193)](#template-119)
+- [120. Speedboat template (193)](#template-120)
+- [121. Domestic flight template - Maldives (193)](#template-121)
+- [122. Seaplane template - Maldives (193)](#template-122)
+- [123. Shuttle pickup from specific airport/train station (193)](#template-123)
+- [124. Theme park shuttle hours (191)](#template-124)
+- [126. Properties in car-free zones (193)](#template-126)
+- [127. Train station shuttle drop-off/specific days information (193)](#template-127)
 
 ### Template Details
+
+<a id="template-001"></a>
 
 #### Template 1: In-room amenity accessible by stairs (193)
 
@@ -222,6 +377,10 @@ Total template rows extracted: **127**.
 > name as shown in Partner
 > Central] room type is
 > accessible by 1 flight of stairs.
+
+**Agent-normalized template text**
+
+The [bathroom/kitchen/bedroom/terrace] in the [insert room name as shown in Partner Central] room type is accessible by 1 flight of stairs.
 
 **Important information**
 
@@ -248,6 +407,8 @@ Topic: Approval Required for
 Template
 Examples of modified templates
 
+<a id="template-002"></a>
+
 #### Template 2: Request room with elevator service (193)
 
 - **Topic:** Accessibility
@@ -260,6 +421,10 @@ Examples of modified templates
 > this property in advance to
 > request a room on a floor with
 > elevator service.
+
+**Agent-normalized template text**
+
+Guests who may encounter issues with stairs should contact this property in advance to request a room on a floor with elevator service.
 
 **Important information**
 
@@ -277,6 +442,8 @@ Team to add acceptable text.
 Escalation Topic: Approval Required
 for Template
 
+<a id="template-003"></a>
+
 #### Template 3: Service animals advance notice (approval required) (193)
 
 - **Topic:** Accessibility
@@ -287,6 +454,10 @@ for Template
 > Guests traveling with a service
 > animal must contact the
 > property prior to arrival.
+
+**Agent-normalized template text**
+
+Guests traveling with a service animal must contact the property prior to arrival.
 
 **Important information**
 
@@ -304,6 +475,8 @@ approval from the Content Standards Team
 before loading this SCII. Escalation Topic:
 Approval Required for Template
 
+<a id="template-004"></a>
+
 #### Template 4: Construction offsite but nearby with dates (193)
 
 - **Topic:** Alert (Construction)
@@ -313,6 +486,10 @@ Approval Required for Template
 
 > Construction is underway
 > nearby until [insert dates].
+
+**Agent-normalized template text**
+
+Construction is underway nearby until [insert dates].
 
 **Important information**
 
@@ -334,6 +511,8 @@ Correct date format examples: June 10,
 2025-January 3, 2026
 Examples of modified templates
 
+<a id="template-005"></a>
+
 #### Template 5: Cruise properties (193)
 
 - **Topic:** Alert (Cruise)
@@ -346,12 +525,18 @@ Examples of modified templates
 > ship/boat] and not a standard
 > hotel.
 
+**Agent-normalized template text**
+
+Please be advised that this property is a [cruise ship/boat] and not a standard hotel.
+
 **Important information**
 
 Use this template when the property is a cruise
 ship or boat that sets sail.
 Ensure that the correct Structure Type has been
 selected in Partner Central
+
+<a id="template-006"></a>
 
 #### Template 6: Noise - Onsite event/festival - temporary notice (193)
 
@@ -370,6 +555,10 @@ selected in Partner Central
 > area/restaurant] during this
 > time.
 
+**Agent-normalized template text**
+
+This property will host [dance parties/music festivals/pool parties/beach parties/private events] on [insert date range]. Guests should expect a high level of noise from the [beach/pool area/restaurant] during this time.
+
 **Important information**
 
 Use this template when events will cause noise
@@ -383,6 +572,8 @@ the outage.
 Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
+
+<a id="template-007"></a>
 
 #### Template 7: Scheduled fire alarm inspection (193)
 
@@ -401,6 +592,10 @@ Correct date format examples: June 10,
 > expect to hear loud noises from
 > emergency alarms.
 
+**Agent-normalized template text**
+
+A scheduled fire alarm system inspection will take place at this property on [insert date] [insert time frame]. [During this time, inspectors will patrol the property and enter guestrooms.] Guests can expect to hear loud noises from emergency alarms.
+
 **Important information**
 
 Use this template for fire alarm alerts (typically
@@ -417,6 +612,8 @@ An expiration date must be added to the text box
 in Partner Central for the day following the
 outage.
 Examples of modified templates
+
+<a id="template-008"></a>
 
 #### Template 8: Scheduled power/water outage (193)
 
@@ -455,6 +652,10 @@ Examples of modified templates
 > time begins at [insert time] on
 > these dates].
 
+**Agent-normalized template text**
+
+Use for outage on 1 day only: A scheduled [power/water/hot water] outage will take place on [insert date] from [insert time frame]. [All facilities that use power, including [elevator(s)/parking garage/restaurant(s)] will not be available during this time]. [Early check-in/late check-out will be not available on this date]. [Check-in time begins at [insert time] on this date]. Use for multiple dates: A scheduled [power/water/hot water] outage will take place [insert date range] from [insert time frame]. [All facilities that use power, including [elevator(s)/parking garage/restaurant(s)] will not be available during this time]. [Early check-in/late check-out will be not available on these dates]. [Check-in time begins at [insert time] on these dates].
+
 **Important information**
 
 Do not escalate to the Content Standards
@@ -489,6 +690,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-009"></a>
+
 #### Template 9: Advance notice for dietary restrictions/food allergies (193)
 
 - **Topic:** Breakfast/Dining
@@ -500,11 +703,17 @@ Correct date format examples: June 10,
 > or food allergies should contact
 > this property in advance.
 
+**Agent-normalized template text**
+
+Guests with dietary restrictions or food allergies should contact this property in advance.
+
 **Important information**
 
 Ensure that the property offers rate plans with
 some or all meals included (value adds should
 indicate this)
+
+<a id="template-010"></a>
 
 #### Template 10: Breakfast/half board/dinner/room only meals booked in advance (193)
 
@@ -518,16 +727,23 @@ indicate this)
 > Only/Dinner] rate plans must
 > book meals in advance.
 
+**Agent-normalized template text**
+
+Guests with [Breakfast/Half Board/Room Only/Dinner] rate plans must book meals in advance.
+
 **Important information**
 
 Verify that relevant rate plans are available.
 Verify that relevant rate plan value adds are
 loaded.
 
-#### Template 11: Breakfast/dinner/h alf board/full board not included for children who stay free (193)
+<a id="template-011"></a>
+
+#### Template 11: Breakfast/dinner/half board/full board not included for children who stay free (193)
 
 - **Topic:** Breakfast/Dining
 - **Source page:** 22
+- **PDF-extracted title:** Breakfast/dinner/h alf board/full board not included for children who stay free (193)
 
 **Template**
 
@@ -539,6 +755,10 @@ loaded.
 > existing bedding with their
 > parent. Fees are collected at the
 > property.
+
+**Agent-normalized template text**
+
+Additional fees of [insert fee amount] apply to children [insert age range] for [breakfast/dinner/half board/full board], when sharing existing bedding with their parent. Fees are collected at the property.
 
 **Important information**
 
@@ -563,6 +783,8 @@ module for the meal price.
 Correct fee format examples: USD 25-45;
 use currency codes and not symbols
 
+<a id="template-012"></a>
+
 #### Template 12: Breakfast for 2 Adults
 
 - **Topic:** Breakfast/Dining
@@ -577,6 +799,10 @@ use currency codes and not symbols
 > listed breakfast fees apply for
 > additional guests.
 
+**Agent-normalized template text**
+
+Guests booked in breakfast included rate plans receive breakfast for up to 2 adults who are sharing a guestroom. The listed breakfast fees apply for additional guests.
+
 **Important information**
 
 As of Feb 1, 2026: Do not use the template.
@@ -587,6 +813,8 @@ adults" is selected
 surcharge loaded? Ask for fees that guests
 (adults and children) will pay for breakfast and
 update the breakfast module
+
+<a id="template-013"></a>
 
 #### Template 13: Breakfast/Half Board rate plans not included for children of certain ages but can be arranged in advance on request (193)
 
@@ -604,6 +832,10 @@ update the breakfast module
 > reservation only and cannot be
 > requested after check-in.
 
+**Agent-normalized template text**
+
+[Breakfast, Half Board] is not included in the [Breakfast, Half Board] rate for children aged [insert age range]. [Breakfast, Half Board] for children is available by advance reservation only and cannot be requested after check-in.
+
 **Important information**
 
 Confirm settings in Partner Central before using
@@ -618,6 +850,8 @@ check-in (it's not optional), then add a club
 card fee in the Facility and service fees
 module for the meal price.
 
+<a id="template-014"></a>
+
 #### Template 14: Breakfast by reservation only/served in guestrooms (193)
 
 - **Topic:** Breakfast/Dining
@@ -631,6 +865,10 @@ module for the meal price.
 > advance of arrival. [Breakfast
 > is served in guestrooms].
 
+**Agent-normalized template text**
+
+This property's breakfast service is available only by reservation and must be requested in advance of arrival. [Breakfast is served in guestrooms].
+
 **Important information**
 
 Use this template to supplement breakfast details
@@ -638,6 +876,8 @@ in Partner Central.
 Breakfast must be listed as available at the
 property in the Breakfast module when using
 this template.
+
+<a id="template-015"></a>
 
 #### Template 15: Breakfast fee is changing soon (193)
 
@@ -649,6 +889,10 @@ this template.
 > The breakfast fee is [insert
 > current breakfast fee] per
 > person until [insert date].
+
+**Agent-normalized template text**
+
+The breakfast fee is [insert current breakfast fee] per person until [insert date].
 
 **Important information**
 
@@ -665,6 +909,8 @@ Correct date format example: June 6, 2024
 Do not add dates like this: 6th June, 6/6,
 Apr 4
 
+<a id="template-016"></a>
+
 #### Template 16: Breakfast served in guestrooms (193)
 
 - **Topic:** Breakfast/Dining
@@ -675,6 +921,10 @@ Apr 4
 > This property's breakfast is
 > served in guestrooms.
 
+**Agent-normalized template text**
+
+This property's breakfast is served in guestrooms.
+
 **Important information**
 
 Use this template to supplement breakfast details
@@ -682,6 +932,8 @@ in Partner Central.
 Breakfast must be listed as available at the
 property in the Breakfast module when using
 this template.
+
+<a id="template-017"></a>
 
 #### Template 17: Different breakfast type available temporarily (193)
 
@@ -697,6 +949,10 @@ this template.
 > go] breakfast. [Buffet/Full] brea
 > kfast service will resume [insert
 > date].
+
+**Agent-normalized template text**
+
+This property is currently serving [set-menu/continental/breakfast to-go] breakfast. [Buffet/Full] brea kfast service will resume [insert date].
 
 **Important information**
 
@@ -716,6 +972,8 @@ Correct date format example: June 6, 2024
 Do not add dates like this: 6th June, 6/6,
 Apr 4
 
+<a id="template-018"></a>
+
 #### Template 18: Dinner reservations required (193)
 
 - **Topic:** Breakfast/Dining
@@ -728,6 +986,10 @@ Apr 4
 > and must be made at least [24,
 > 48,72] hours in advance.
 
+**Agent-normalized template text**
+
+Reservations are required for dinner at the onsite restaurant and must be made at least [24, 48,72] hours in advance.
+
 **Important information**
 
 Use this template to supplement restaurant
@@ -735,6 +997,8 @@ details in Partner Central. Select in the Dining
 and restaurants module > Restaurants (at least
 1 selected) > Venue details > Dinner should be
 selected, as applicable for any venues
+
+<a id="template-019"></a>
 
 #### Template 19: Dining hours/closed for certain meals on certain dates - temporary notice (193)
 
@@ -747,6 +1011,10 @@ selected, as applicable for any venues
 > will be closed for [lunch
 > service/dinner service] on
 > [insert date].
+
+**Agent-normalized template text**
+
+This property's [restaurant/bar] will be closed for [lunch service/dinner service] on [insert date].
 
 **Important information**
 
@@ -768,6 +1036,8 @@ Correct date format example: June 6, 2024
 Do not add dates like this: 6th June, 6/6,
 Apr 4
 
+<a id="template-020"></a>
+
 #### Template 20: HB/FB rates do not include drinks (193)
 
 - **Topic:** Breakfast/Dining
@@ -778,6 +1048,10 @@ Apr 4
 > [Half board/Full Board] rate
 > plans do not include drinks with
 > meals.
+
+**Agent-normalized template text**
+
+[Half board/Full Board] rate plans do not include drinks with meals.
 
 **Important information**
 
@@ -799,6 +1073,8 @@ Request Salesforce case via CMUI to the
 Content Standards Team to add 'Special Deal'
 text at the rate plan level
 
+<a id="template-021"></a>
+
 #### Template 21: Meals by reservation only (193)
 
 - **Topic:** Breakfast/Dining
@@ -810,12 +1086,18 @@ text at the rate plan level
 > reservation only and cannot be
 > requested after check-in.
 
+**Agent-normalized template text**
+
+Meals are available by reservation only and cannot be requested after check-in.
+
 **Important information**
 
 Use this template to supplement restaurant
 details in the Dining and Restaurants module.
 Select Reservations required for specific venues
 in the Dining and restaurants module.
+
+<a id="template-022"></a>
 
 #### Template 22: Meals during Ramadan (193)
 
@@ -839,6 +1121,10 @@ in the Dining and restaurants module.
 > receive iftar instead of
 > standard dinner service.]
 
+**Agent-normalized template text**
+
+During Ramadan, from [insert month day - month day, year], [the restaurant/the property] serves sahur (pre-dawn meal) [and iftar (evening meal)] according to local custom. [Guests booked in breakfast included rate plans will receive sahur instead of standard breakfast service.] [Guests booked in dinner included rate plans receive iftar instead of standard dinner service.]
+
 **Important information**
 
 Add applicable dates and set an expiration date
@@ -847,6 +1133,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-023"></a>
 
 #### Template 23: Offsite breakfast location (193)
 
@@ -863,6 +1151,10 @@ Topic: Approval Required for Template
 > miles] ([insert distance in
 > meters or km]) away.
 
+**Agent-normalized template text**
+
+This property's breakfast is served at a nearby [bar, restaurant, hotel, partner property], located [insert distance in feet, yards, or miles] ([insert distance in meters or km]) away.
+
 **Important information**
 
 Use this template to supplement 'Free Breakfast'
@@ -871,6 +1163,8 @@ use of this template to properties with 'Free
 Breakfast' or rates with Breakfast-included value
 adds.
 Distance from the property is required
+
+<a id="template-024"></a>
 
 #### Template 24: Room service hours (191)
 
@@ -882,6 +1176,10 @@ Distance from the property is required
 > Room service is available [XX
 > AM/PM] - [XX AM/PM].
 
+**Agent-normalized template text**
+
+Room service is available [XX AM/PM] - [XX AM/PM].
+
 **Important information**
 
 Use only when 'Room service available - limited
@@ -892,16 +1190,23 @@ AM-9 PM; use AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
 
-#### Template 25: After hours check- in/alternate check- in location (over 64 characters) (193)
+<a id="template-025"></a>
+
+#### Template 25: After hours check-in/alternate check-in location (over 64 characters) (193)
 
 - **Topic:** Check-in/Check-out
 - **Source page:** 24
+- **PDF-extracted title:** After hours check- in/alternate check- in location (over 64 characters) (193)
 
 **Template**
 
 > Check-in for this property is
 > based at a different
 > location, [insert address here].
+
+**Agent-normalized template text**
+
+Check-in for this property is based at a different location, [insert address here].
 
 **Important information**
 
@@ -922,6 +1227,8 @@ include City, Country if there's no
 State/Province for the property's alternate
 check-in location.
 
+<a id="template-026"></a>
+
 #### Template 26: Check-in time for Jewish holidays (193)
 
 - **Topic:** Check-in/Check-out
@@ -936,6 +1243,10 @@ check-in location.
 > time is X PM on Saturday and
 > Jewish holidays].
 
+**Agent-normalized template text**
+
+Check-in starts at [insert time] on Saturday [and Jewish holidays/the final day of Jewish holidays]. [Check-out time is X PM on Saturday and Jewish holidays].
+
 **Important information**
 
 When using this template, standard check-in and
@@ -945,16 +1256,23 @@ Correct time format examples: 6 PM, noon,
 midnight use; AM and PM.
 Do not add times like this: 12am, 12pm
 
-#### Template 27: Check in by specifictimeto receive dinner (193)
+<a id="template-027"></a>
+
+#### Template 27: Check in by specific time to receive dinner (193)
 
 - **Topic:** Check-in/Check-out
 - **Source page:** 24
+- **PDF-extracted title:** Check in by specifictimeto receive dinner (193)
 
 **Template**
 
 > Guests booked in Half Board
 > ratesmustcheck-inby[XX
 > PM] to receive dinner.
+
+**Agent-normalized template text**
+
+Guests booked in Half Board rates must check in by[XX PM] to receive dinner.
 
 **Important information**
 
@@ -968,10 +1286,19 @@ midnight use; AM and PM.
 Do not add times like this: 12am, 12pm
 Examples of modified templates
 
-#### Template 28: 
+<a id="template-028"></a>
+
+#### Template 28: Untitled/blank source row
 
 - **Topic:** Breakfast/Dining
 - **Source page:** 25
+- **PDF-extracted title:** Blank in source PDF
+
+**Template status**
+
+No standalone template text is present in the PDF/source row; only Important information is present. This is preserved intentionally rather than inferred.
+
+<a id="template-029"></a>
 
 #### Template 29: City homestay services for foreign tourists (193)
 
@@ -992,6 +1319,10 @@ Examples of modified templates
 > Korea will not be allowed to
 > check in.
 
+**Agent-normalized template text**
+
+This property has indicated that it is registered as a city homestay service for foreign tourists to experience the culture of Korean houses. The property has indicated that it can therefore only accept bookings from foreign guests. Guests whose residence is in Korea will not be allowed to check in.
+
 **Important information**
 
 Valid for South Korea properties only and
@@ -1011,10 +1342,13 @@ template does not meet the needs of the request.
 Escalation Topic: Approval Required for
 Template
 
-#### Template 30: Guests must confirm their arrival time on the check- in day via text/WhatsApp/tele phone (193)
+<a id="template-030"></a>
+
+#### Template 30: Guests must confirm their arrival time on the check-in day via text/WhatsApp/telephone (193)
 
 - **Topic:** Check-in/Check-out
 - **Source page:** 25
+- **PDF-extracted title:** Guests must confirm their arrival time on the check- in day via text/WhatsApp/tele phone (193)
 
 **Template**
 
@@ -1023,6 +1357,10 @@ Template
 > message/WhatsApp/telephon
 > e] in the morning on their arrival
 > date to arrange check-in.
+
+**Agent-normalized template text**
+
+Guests are required to contact this property by [text message/WhatsApp/telephon e] in the morning on their arrival date to arrange check-in.
 
 **Important information**
 
@@ -1036,10 +1374,13 @@ check-in, as the attribute listed above covers
 the request. DO NOT INCLUDE phone
 numbers or email addresses in the template.
 
-#### Template 31: Guests must contact the property in advance only by telephone/text/Wh atsApp to arrange check-in (193)
+<a id="template-031"></a>
+
+#### Template 31: Guests must contact the property in advance only by telephone/text/WhatsApp to arrange check-in (193)
 
 - **Topic:** Check-in/Check-out
 - **Source page:** 25
+- **PDF-extracted title:** Guests must contact the property in advance only by telephone/text/Wh atsApp to arrange check-in (193)
 
 **Template**
 
@@ -1048,6 +1389,10 @@ numbers or email addresses in the template.
 > WhatsApp] [insert number of
 > hours/days] prior to arrival to
 > arrange check-in.
+
+**Agent-normalized template text**
+
+Guests are required to contact this property by [text message/WhatsApp] [insert number of hours/days] prior to arrival to arrange check-in.
 
 **Important information**
 
@@ -1072,10 +1417,13 @@ template.
 DO NOT INCLUDE phone numbers or email
 addresses in the template.
 
-#### Template 32: Property will contact the guest in advance only by telephone/text/Wh atsapp with check- in details (193)
+<a id="template-032"></a>
+
+#### Template 32: Property will contact the guest in advance only by telephone/text/WhatsApp with check-in details (193)
 
 - **Topic:** Check-in/Check-out
 - **Source page:** 25
+- **PDF-extracted title:** Property will contact the guest in advance only by telephone/text/Wh atsapp with check- in details (193)
 
 **Template**
 
@@ -1085,6 +1433,10 @@ addresses in the template.
 > message] [insert number of
 > minutes/hours] prior to arrival
 > with check-in instructions
+
+**Agent-normalized template text**
+
+Guests will receive a [telephone call/text message/WhatsApp message] [insert number of minutes/hours] prior to arrival with check-in instructions
 
 **Important information**
 
@@ -1107,6 +1459,8 @@ the request.
 DO NOT INCLUDE phone numbers or email
 addresses in the template.
 
+<a id="template-033"></a>
+
 #### Template 33: Curfew time (191)
 
 - **Topic:** Check-in/Check-out
@@ -1121,6 +1475,10 @@ addresses in the template.
 > enter or leave the property
 > during this time.
 
+**Agent-normalized template text**
+
+The entrance to the property closes between [XX AM/PM] and [XX AM/PM]. Guests are not permitted to enter or leave the property during this time.
+
 **Important information**
 
 Verify any changes needed to front desk hours or
@@ -1129,6 +1487,8 @@ out module in Partner Central.
 Correct time format examples: 6-9 PM, 9
 PM-6 AM; noon, midnight use; AM and PM.
 Do not add times like this: 12am, 12pm
+
+<a id="template-034"></a>
 
 #### Template 34: Exterior telephone, doorbell, intercom (193)
 
@@ -1143,12 +1503,18 @@ Do not add times like this: 12am, 12pm
 > telephone/doorbell/intercom] f
 > or check-in assistance.
 
+**Agent-normalized template text**
+
+Guests arriving outside of regular check-in hours can use the [exterior telephone/doorbell/intercom] f or check-in assistance.
+
 **Important information**
 
 Use this template as a supplement to the check-
 in hours listed in the Check-in/check-
 out module in Partner Central.
 Examples of modified templates
+
+<a id="template-035"></a>
 
 #### Template 35: Front desk/reception additional time/day range (193)
 
@@ -1159,6 +1525,10 @@ Examples of modified templates
 
 > [Reception/front desk] hours
 > are [time] on [day/date range].
+
+**Agent-normalized template text**
+
+[Reception/front desk] hours are [time] on [day/date range].
 
 **Important information**
 
@@ -1188,6 +1558,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-036"></a>
+
 #### Template 36: Check-in and check-out additional time/day range (193)
 
 - **Topic:** Check-in/Check-out
@@ -1198,6 +1570,10 @@ Correct date format examples: June 10,
 > [Check-in/Check-out] hours
 > are [time] on [day/date
 > range].
+
+**Agent-normalized template text**
+
+[Check-in/Check-out] hours are [time] on [day/date range].
 
 **Important information**
 
@@ -1224,6 +1600,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-037"></a>
+
 #### Template 37: Minimum check-in age is different for certain dates (193)
 
 - **Topic:** Check-in/Check-out
@@ -1234,6 +1612,10 @@ Correct date format examples: June 10,
 > The minimum check-in age
 > is [insert age] for stay dates
 > that include [insert date range].
+
+**Agent-normalized template text**
+
+The minimum check-in age is [insert age] for stay dates that include [insert date range].
 
 **Important information**
 
@@ -1249,6 +1631,8 @@ August 16, 2025; November 3, 2025-January
 3, 2026
 Examples of modified templates
 
+<a id="template-038"></a>
+
 #### Template 38: Same-day bookings (193)
 
 - **Topic:** Check-in/Check-out
@@ -1263,12 +1647,18 @@ Examples of modified templates
 > the property's office instead
 > of on site].
 
+**Agent-normalized template text**
+
+For same-day bookings made within 24 hours before arrival, check-in time is available at [insert check-in time] [at the property's office instead of on site].
+
 **Important information**
 
 Correct time format examples: noon, 6 PM,
 midnight, 10 AM; AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
+
+<a id="template-039"></a>
 
 #### Template 39: City Tax in Langkawi, MYS (192)
 
@@ -1287,11 +1677,17 @@ Do not add times like this: 12am, 12pm,
 > details, please contact the
 > property.
 
+**Agent-normalized template text**
+
+The City Tax amount listed above may increase during popular local events such as the Langkawi International Maritime & Aerospace (LIMA), Le Tour De Langkawi, Ironman and Oceanman Malaysia. For more details, please contact the property.
+
 **Important information**
 
 Used to support the city tax amount loaded in
 Partner Central. Add for every property in
 Langkawi, MYS. Do not add for other locations.
+
+<a id="template-040"></a>
 
 #### Template 40: Credit card fee required for specific card types (192)
 
@@ -1304,6 +1700,10 @@ Langkawi, MYS. Do not add for other locations.
 > only to [American Express
 > card/Visa
 > card/Mastercard] transactions.
+
+**Agent-normalized template text**
+
+The listed credit card fee applies only to [American Express card/Visa card/Mastercard] transactions.
 
 **Important information**
 
@@ -1318,6 +1718,8 @@ Amount or Percent > insert amount
 is selected as a Method of payment in Partner
 Central
 
+<a id="template-041"></a>
+
 #### Template 41: Deposit applies for local guests only (192)
 
 - **Topic:** Deposits/Payments
@@ -1331,6 +1733,10 @@ Central
 > (insert distance in
 > kilometers)] of the property.
 
+**Agent-normalized template text**
+
+The listed deposit applies to local guests who reside within [insert distance in miles (insert distance in kilometers)] of the property.
+
 **Important information**
 
 Template cannot be modified to list place
@@ -1342,6 +1748,8 @@ the Deposits module > General deposit > Add
 the highest possible general deposit amount
 2. Ensure that the correct payment types are
 selected in the Payments module
+
+<a id="template-042"></a>
 
 #### Template 42: Reservation deposit payable by secure link after booking (193)
 
@@ -1359,6 +1767,10 @@ selected in the Payments module
 > deposit is payable via secure
 > link, due within [24, 48,
 > 72] hours after booking.
+
+**Agent-normalized template text**
+
+Guests will receive an email from the property with reservation deposit payment information [within 24/48/72 hours] after booking. The deposit is payable via secure link, due within [24, 48, 72] hours after booking.
 
 **Important information**
 
@@ -1382,6 +1794,8 @@ damage deposits collected in advance as the
 attributes in the Deposits module cover the
 request sufficiently.
 
+<a id="template-043"></a>
+
 #### Template 43: Deposit refunded after check-out (192)
 
 - **Topic:** Deposits/Payments
@@ -1396,6 +1810,10 @@ request sufficiently.
 > transfer] within [insert number
 > of days] days after check-out,
 > pending room inspection.
+
+**Agent-normalized template text**
+
+This property's listed [general/breakage/cleaning] d eposit is refundable via [credit card/bank transfer] within [insert number of days] days after check-out, pending room inspection.
 
 **Important information**
 
@@ -1412,6 +1830,8 @@ cards)
 3. Ensure that the credit card type accepted is
 selected as a 'Method of payment' in the
 Payments module
+
+<a id="template-044"></a>
 
 #### Template 44: Deposit varies by room type (192)
 
@@ -1430,6 +1850,10 @@ Payments module
 > stay] for [insert room type
 > names as shown in Partner
 > Central].
+
+**Agent-normalized template text**
+
+The listed general deposit applies to [insert room type name as shown in Partner Central with the highest deposit)] bookings. The general deposit is [insert lower fee amount] [per day/per stay] for [insert room type names as shown in Partner Central].
 
 **Important information**
 
@@ -1454,6 +1878,8 @@ active
 display in Partner Central
 Examples of modified templates
 
+<a id="template-045"></a>
+
 #### Template 45: Deposit applies to specific room types only (192)
 
 - **Topic:** Deposits/Payments
@@ -1465,6 +1891,10 @@ Examples of modified templates
 > applies to [insert room type
 > name(s) as shown in Partner
 > Central] bookings only.
+
+**Agent-normalized template text**
+
+The listed general deposit applies to [insert room type name(s) as shown in Partner Central] bookings only.
 
 **Important information**
 
@@ -1483,6 +1913,8 @@ active
 3. Use the room names in the template as they
 display in Partner Central
 
+<a id="template-046"></a>
+
 #### Template 46: Prepaid credit/debit/gift cards not accepted (multiple types) (193)
 
 - **Topic:** Deposits/Payments
@@ -1500,6 +1932,10 @@ display in Partner Central
 > purchases made on site,
 > including incidentals].
 
+**Agent-normalized template text**
+
+This property does not accept prepaid [credit, debit, or gift] cards [at check-in] [for all bookings where payment for the stay will be made on site instead of at the time of booking, and for all purchases made on site, including incidentals].
+
 **Important information**
 
 If indicating bookings where payment for the stay
@@ -1507,6 +1943,8 @@ will be made on site, HC payments should be
 available at the property.
 Ensure that Deposits module and Payments
 module are correct
+
+<a id="template-047"></a>
 
 #### Template 47: Fee/advance notice for luggage storage (193)
 
@@ -1521,11 +1959,17 @@ module are correct
 > storage must be requested in
 > advance of arrival.]
 
+**Agent-normalized template text**
+
+This property charges a fee for luggage storage before check-in and after check-out. [Luggage storage must be requested in advance of arrival.]
+
 **Important information**
 
 Use this template to supplement 'Luggage
 Storage' in the Guest facilities and services
 module.
+
+<a id="template-048"></a>
 
 #### Template 48: Mandatory cleaning fee varies by room type (192)
 
@@ -1552,6 +1996,10 @@ module.
 > fee amount] for [insert room
 > name] bookings.
 
+**Agent-normalized template text**
+
+The listed mandatory cleaning fee applies to [insert room name with the highest fee amount] bookings. The following mandatory cleaning fees [per accommodation/per person], [per day/per week/per stay] apply to bookings made in other room types (fees collected at the property): [insert fee amount] for [insert room name] bookings, [insert fee amount] for [insert room name] bookings, and [insert fee amount] for [insert room name] bookings.
+
 **Important information**
 
 Use this template to supplement fees loaded in
@@ -1564,6 +2012,8 @@ Partner Central
 Central
 Correct fee format examples: USD 65; use
 currency codes and not symbols
+
+<a id="template-049"></a>
 
 #### Template 49: Mandatory fee for certain length of stays only (192)
 
@@ -1578,6 +2028,10 @@ currency codes and not symbols
 > of [insert number of
 > nights] only.
 
+**Agent-normalized template text**
+
+The listed mandatory [bed sheets/towels/cleaning] fee applies to minimum stays of [insert number of nights] only.
+
 **Important information**
 
 Use this template ONLY to supplement fees
@@ -1589,6 +2043,8 @@ accommodation, per stay
 'Listed mandatory transfer fee' in the template
 refers to the amount loaded in the Facilities and
 service fees module
+
+<a id="template-050"></a>
 
 #### Template 50: Mandatory Transfer Fees vary seasonally (192)
 
@@ -1604,6 +2060,10 @@ service fees module
 > amount] per adult and [insert
 > lower amount] per child,
 > from [insert other date range].
+
+**Agent-normalized template text**
+
+The listed mandatory transfer fee applies for stays [insert dates the fee is valid]. The transfer fee is [insert lower fee amount] per adult and [insert lower amount] per child, from [insert other date range].
 
 **Important information**
 
@@ -1632,6 +2092,8 @@ Correct date format examples: July 5-
 August 16, 2025; November 3, 2025-January
 3, 2026
 
+<a id="template-051"></a>
+
 #### Template 51: Multiple mandatory transfer fees (192)
 
 - **Topic:** Facility and Service Fees
@@ -1644,6 +2106,10 @@ August 16, 2025; November 3, 2025-January
 > fee amount] per adult
 > and [insert lower amount] per
 > child.
+
+**Agent-normalized template text**
+
+The [insert mode of transfer that is lowest] is [insert lower fee amount] per adult and [insert lower amount] per child.
 
 **Important information**
 
@@ -1666,6 +2132,8 @@ Load the following in 192: The boat
 transfer fee is USD 150 per adult
 and USD 100 per child.
 
+<a id="template-052"></a>
+
 #### Template 52: Pool/spa/spa tub fee required per entry or per hour (192)
 
 - **Topic:** Facility and Service Fees
@@ -1679,6 +2147,10 @@ and USD 100 per child.
 > per [entrance/hour] to access
 > the [pool/spa area/spa
 > tub] area.
+
+**Agent-normalized template text**
+
+The listed optional [pool/spa] fee is charged per person, per [entrance/hour] to access the [pool/spa area/spa tub] area.
 
 **Important information**
 
@@ -1720,6 +2192,8 @@ charges a fee
 Generated text: A facilities fee includes use of:
 sauna
 
+<a id="template-053"></a>
+
 #### Template 53: Pool fee varies (192)
 
 - **Topic:** Facility and Service Fees
@@ -1741,6 +2215,10 @@ sauna
 > pool]. [Guests can reserve up
 > to X pool session(s) per day.]
 
+**Agent-normalized template text**
+
+The optional pool fee varies from [insert lowest fee amount - insert highest fee amount] per person, per pool session. The listed optional pool fee applies to guest ages [insert age range] for access to the pool [insert time frames] on [day of the week/date range]. Pool session times vary per season [and per pool]. [Guests can reserve up to X pool session(s) per day.]
+
 **Important information**
 
 Use this template ONLY to supplement fees
@@ -1755,6 +2233,8 @@ Correct date format examples: June 10,
 2025-January 3, 2026
 Correct fee format examples: USD 25-45;
 use currency codes and not symbols
+
+<a id="template-054"></a>
 
 #### Template 54: Mandatory gala dinner fees included for certain room types (192) (Use if the number of guests included varies by room type)
 
@@ -1775,6 +2255,10 @@ use currency codes and not symbols
 > names(s) as shown in Partner
 > Central].
 
+**Agent-normalized template text**
+
+This property's mandatory gala dinner fee on [insert date] includes [insert number] persons in [insert room type name(s) as shown in Partner Central]. The listed gala dinner fee is required per person for guests exceeding this number in [insert room type names(s) as shown in Partner Central].
+
 **Important information**
 
 Use this template ONLY to supplement fees
@@ -1788,6 +2272,8 @@ Select 'Included in room rate' only when the
 gala dinner is included for all guests in all
 room types
 Correct date format examples: July 5, 2026
+
+<a id="template-055"></a>
 
 #### Template 55: Mandatory gala dinner fees for additional guests (192)
 
@@ -1804,6 +2290,10 @@ Correct date format examples: July 5, 2026
 > person for guests exceeding this
 > number.
 
+**Agent-normalized template text**
+
+This property's mandatory gala dinner is included in the room rate on [insert date] for [insert number] guests. The listed gala dinner fee is required per person for guests exceeding this number.
+
 **Important information**
 
 Use this template ONLY to supplement fees
@@ -1815,6 +2305,8 @@ added in the Dining and restaurants module as
 holiday or other date.
 Correct date format examples: January 1,
 2026
+
+<a id="template-056"></a>
 
 #### Template 56: Optional gala dinner fees, must be booked in advance (192)
 
@@ -1840,11 +2332,17 @@ Correct date format examples: January 1,
 > children ages x and younger
 > to attend with paying adults.]
 
+**Agent-normalized template text**
+
+This property hosts an optional [Christmas Eve/Christmas Day, New Year's Eve/New Year's Day] gala dinner for guests staying on [December 24/December 25/December 31/January 1]. Guests who wish to attend must book the gala dinner at least [x] [days, weeks] in advance. Fees are [x] per adult and [x] per child ages [x-x], collected by the property. [There are no fees for children ages x and younger to attend with paying adults.]
+
 **Important information**
 
 Only to be used when guests must book the
 dinner in advance of arrival. Otherwise, guests
 can be told via Messages or at check-in
+
+<a id="template-057"></a>
 
 #### Template 57: Required ID for all guests (193)
 
@@ -1861,6 +2359,10 @@ can be told via Messages or at check-in
 > Cooperation Council) ID are
 > accepted.]
 
+**Agent-normalized template text**
+
+All guests, including children, are required to present a valid government-issued ID card at check-in. [Valid passport, UAE Emirates ID, or GCC (Gulf Cooperation Council) ID are accepted.]
+
 **Important information**
 
 If the request is only to indicate ID is required at
@@ -1870,6 +2372,8 @@ displaying on all properties to cover the request
 be required at check-in...) and avoid adding text.
 Do not modify the ID requirements. Text
 in red may be added for UAE properties only.
+
+<a id="template-058"></a>
 
 #### Template 58: Alternative check-in age for guests with a military ID (193)
 
@@ -1882,6 +2386,10 @@ in red may be added for UAE properties only.
 > or over to check in with valid
 > military ID
 
+**Agent-normalized template text**
+
+This property allows guests 18 or over to check in with valid military ID
+
 **Important information**
 
 Use this template when a property has a higher
@@ -1893,6 +2401,8 @@ escalate to the Content Standards Team if this
 template does not meet the needs of the request.
 Escalation Topic: Approval Required for
 Template
+
+<a id="template-059"></a>
 
 #### Template 59: Chinese nationals (properties in China only) (193)
 
@@ -1910,6 +2420,10 @@ Template
 > other guests may continue to
 > provide passports at check-in.
 
+**Agent-normalized template text**
+
+To check in, Chinese nationals must present their government- issued ID card "The second generation of resident identification card of the People's Republic of China." All other guests may continue to provide passports at check-in.
+
 **Important information**
 
 Add only on request. For properties in China
@@ -1919,6 +2433,8 @@ escalate to the Content Standards Team if this
 template does not meet the needs of the request.
 Escalation Topic: Approval Required for
 Template
+
+<a id="template-060"></a>
 
 #### Template 60: CURP Required (properties in Mexico only) (193)
 
@@ -1937,6 +2453,10 @@ Template
 > must present a valid passport at
 > the time of check-in.
 
+**Agent-normalized template text**
+
+Guests who are citizens or residents of Mexico must present their valid Unique Population Registry Code (CURP) at the time of check-in. Guests who are citizens or residents of other countries must present a valid passport at the time of check-in.
+
 **Important information**
 
 Add only on request. For properties in Mexico
@@ -1946,6 +2466,8 @@ escalate to the Content Standards Team if this
 template does not meet the needs of the request.
 Escalation Topic: Approval Required for
 Template
+
+<a id="template-061"></a>
 
 #### Template 61: Hajj permit (193) (Saudi Arabia properties only, on request)
 
@@ -1959,6 +2481,10 @@ Template
 > and check-in at the
 > property from [insert date
 > range].
+
+**Agent-normalized template text**
+
+A valid permit to perform Hajj must be presented at the airport and check-in at the property from [insert date range].
 
 **Important information**
 
@@ -1977,6 +2503,8 @@ by the property
 Correct date format examples: July 5-August
 16, 2025; November 3, 2025-January 3, 2026
 
+<a id="template-062"></a>
+
 #### Template 62: Hostel organization membership card (193)
 
 - **Topic:** Identification
@@ -1993,10 +2521,16 @@ Correct date format examples: July 5-August
 > membership online or at the
 > reception desk at check-in.
 
+**Agent-normalized template text**
+
+Guests must present a valid Hostelling International Youth Hostel (HI) or national hostel organization membership card at check-in. Guests who are not members may purchase a membership online or at the reception desk at check-in.
+
 **Important information**
 
 May be modified to include a different Youth
 Hostel organization name
+
+<a id="template-063"></a>
 
 #### Template 63: Inner Line Permit Required (193)
 
@@ -2020,6 +2554,10 @@ Hostel organization name
 > Tourism Booth, and Sikkim
 > House in Kolkata or Delhi.
 
+**Agent-normalized template text**
+
+Visitors who are not citizens of India must obtain an Inner Line Permit (ILP) to enter Sikkim. Each guest must have photocopies of their passport and Indian visa along with the original documents and 2 recent passport-sized photos to receive the permit. Guests can submit these documents at Melli and Rangpo entry checkpoints, Bagdogra Airport's Sikkim Tourism Booth, and Sikkim House in Kolkata or Delhi.
+
 **Important information**
 
 Only to be added for properties located in
@@ -2030,6 +2568,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-064"></a>
 
 #### Template 64: Same booking name/matching ID policy (193)
 
@@ -2042,6 +2582,10 @@ Topic: Approval Required for Template
 > identification presented at
 > check-in must match the name
 > on the reservation.
+
+**Agent-normalized template text**
+
+The name on the photo identification presented at check-in must match the name on the reservation.
 
 **Important information**
 
@@ -2058,10 +2602,13 @@ Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
 
-#### Template 65: PAN cards not accepted(193)
+<a id="template-065"></a>
+
+#### Template 65: PAN cards not accepted (193)
 
 - **Topic:** Identification
 - **Source page:** 32
+- **PDF-extracted title:** PAN cards not accepted(193)
 
 **Template**
 
@@ -2069,10 +2616,16 @@ Topic: Approval Required for Template
 > notacceptedasidentificationat
 > this property.
 
+**Agent-normalized template text**
+
+Please note that PAN cards are notacceptedasidentificationat this property.
+
 **Important information**
 
 Do not modify. Only to be added for properties
 locatedinIndia.
+
+<a id="template-066"></a>
 
 #### Template 66: Passport only (193)
 
@@ -2086,6 +2639,10 @@ locatedinIndia.
 > of identification that is accepted
 > at this property.
 
+**Agent-normalized template text**
+
+All guests must show a valid passport. This is the only form of identification that is accepted at this property.
+
 **Important information**
 
 If the request is only to indicate photo ID is
@@ -2094,6 +2651,8 @@ required at check-in, rely on generated text
 (Government-issued photo identification ... may
 be required at check-in...) and avoid adding SCII
 text.
+
+<a id="template-067"></a>
 
 #### Template 67: Amenity not available due to renovations(193)
 
@@ -2108,6 +2667,10 @@ text.
 > service, etc.] is not available
 > until [insert date/further
 > notice].
+
+**Agent-normalized template text**
+
+Due to renovations, [valet parking/airport shuttle service/housekeeping service, etc.] is not available until [insert date/further notice].
 
 **Important information**
 
@@ -2127,6 +2690,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-068"></a>
+
 #### Template 68: Amenity closed for specific hours/holidays - Temporary notice (193)
 
 - **Topic:** Not Available/Closed (Temporary Dates/Holidays)
@@ -2139,6 +2704,10 @@ Correct date format examples: June 10,
 > pool/spa/front desk] will not be
 > available [insert time
 > frame] on [insert date].
+
+**Agent-normalized template text**
+
+This property's [elevator/restaurant/pool/spa/front desk] will not be available [insert time frame] on [insert date].
 
 **Important information**
 
@@ -2159,6 +2728,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-069"></a>
+
 #### Template 69: Dining/bar hours on certain days of the week/holidays- Temporary closure notice (193)
 
 - **Topic:** Not Available/Closed (Temporary Dates/Holidays)
@@ -2171,6 +2742,10 @@ Correct date format examples: June 10,
 > be closed every [insert day of
 > the week] from [insert date
 > range].
+
+**Agent-normalized template text**
+
+This property's [restaurant/bar] will be closed every [insert day of the week] from [insert date range].
 
 **Important information**
 
@@ -2190,6 +2765,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-070"></a>
+
 #### Template 70: Dining hours/closed for certain meals/holidays - Temporary notice (193)
 
 - **Topic:** Not Available/Closed (Temporary Dates/Holidays)
@@ -2202,6 +2779,10 @@ Correct date format examples: June 10,
 > be closed for [lunch
 > service/dinner
 > service] on [insert date].
+
+**Agent-normalized template text**
+
+This property's [restaurant/bar] will be closed for [lunch service/dinner service] on [insert date].
 
 **Important information**
 
@@ -2219,6 +2800,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-071"></a>
+
 #### Template 71: Special event - Amenity closed for certain hours/holidays - Temporary notice (hours)
 
 - **Topic:** Not Available/Closed (Temporary Dates/Holidays)
@@ -2230,6 +2813,10 @@ Correct date format examples: June 10,
 > property's [restaurant/bar/pool/
 > front desk] will close at [insert
 > time] on [insert date].
+
+**Agent-normalized template text**
+
+Due to a special event, this property's [restaurant/bar/pool/front desk] will close at [insert time] on [insert date].
 
 **Important information**
 
@@ -2253,6 +2840,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 
+<a id="template-072"></a>
+
 #### Template 72: Public bath closed - Temporary notice (193)
 
 - **Topic:** Not Available/Closed (Temporary Dates/Holidays)
@@ -2264,6 +2853,10 @@ Correct date format examples: June 10,
 > bath/private bath/outdoor
 > private bath] will be
 > closed [insert dates].
+
+**Agent-normalized template text**
+
+This property's [public bath/private bath/outdoor private bath] will be closed [insert dates].
 
 **Important information**
 
@@ -2280,10 +2873,13 @@ Correct date format examples: June 10,
 2025-January 3, 2026
 Examples of modified templates
 
-#### Template 73: Limited All- Inclusive Plan beverage service (193)
+<a id="template-073"></a>
+
+#### Template 73: Limited All-Inclusive Plan beverage service (193)
 
 - **Topic:** Other
 - **Source page:** 34
+- **PDF-extracted title:** Limited All- Inclusive Plan beverage service (193)
 
 **Template**
 
@@ -2292,6 +2888,10 @@ Examples of modified templates
 > from [insert time frame].
 > Outside of these hours, fees
 > apply for beverages.
+
+**Agent-normalized template text**
+
+The All-Inclusive rate plan includes beverage service from [insert time frame]. Outside of these hours, fees apply for beverages.
 
 **Important information**
 
@@ -2304,6 +2904,8 @@ Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
 Examples of modified templates
+
+<a id="template-074"></a>
 
 #### Template 74: Rooms in an annex building (193)
 
@@ -2323,6 +2925,10 @@ Examples of modified templates
 > by stairs]. [Parking and
 > breakfast is available at the
 > main building.]
+
+**Agent-normalized template text**
+
+This property comprises the main building and an annex building. The annex building is located [insert distance in yards or feet (insert distance in meters)] from the main building. [Guestrooms in the annex building are accessible by stairs]. [Parking and breakfast is available at the main building.]
 
 **Important information**
 
@@ -2351,6 +2957,8 @@ guests must be able to see when booking that
 the room they are selecting is not in the main
 building.
 
+<a id="template-075"></a>
+
 #### Template 75: Seasonal discount cards (193)
 
 - **Topic:** Other
@@ -2374,6 +2982,10 @@ building.
 > Trentino; and for non-ski
 > activities.
 
+**Agent-normalized template text**
+
+Use this a general template: The [name of card] Guest Card is available at this property and guarantees several services according to the season. Summer: Ski lift in Val di Fiemme; public transport in Trentino province; pass for natural parks, castles, and museums in Trentino. Winter: Ski-bus service; public transport; pass for natural parks, castles, and museums in Trentino; and for non-ski activities.
+
 **Important information**
 
 Location-specific discount cards, popular in
@@ -2395,6 +3007,8 @@ details you found when you googled the card)
 Topic: Content
 Subtopic: Content Promotion Request
 
+<a id="template-076"></a>
+
 #### Template 76: Extended parking limit (193)
 
 - **Topic:** Parking
@@ -2409,11 +3023,17 @@ Subtopic: Content Promotion Request
 > advance to reserve extended
 > parking.]
 
+**Agent-normalized template text**
+
+Extended parking is permitted for up to [insert number] days. [Guests must contact this property in advance to reserve extended parking.]
+
 **Important information**
 
 To use this template, 'Extended parking' must be
 selected in the Parking module in Partner
 Central; add the fee amount.
+
+<a id="template-077"></a>
 
 #### Template 77: Extended parking not available (191)
 
@@ -2427,10 +3047,16 @@ Central; add the fee amount.
 > limited to the duration of the
 > guest's stay
 
+**Agent-normalized template text**
+
+This property does not provide extended parking. Parking is limited to the duration of the guest's stay
+
 **Important information**
 
 Ensure that 'Extended parking' is not ticked in
 the Parking module in Partner Central.
+
+<a id="template-078"></a>
 
 #### Template 78: Parking fee changing (192)
 
@@ -2444,6 +3070,10 @@ the Parking module in Partner Central.
 > amount] per vehicle [per night,
 > per stay] until [insert date].
 
+**Agent-normalized template text**
+
+The [self/valet] parking fee is [insert current fee amount] per vehicle [per night, per stay] until [insert date].
+
 **Important information**
 
 Update the Parking module with the new price.
@@ -2454,6 +3084,8 @@ Correct fee format examples: USD 16, THB
 Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
+
+<a id="template-079"></a>
 
 #### Template 79: Parking fee varies (192)
 
@@ -2466,6 +3098,10 @@ Correct date format examples: June 10,
 > to [insert fee amount] per night
 > on [weekdays/weekends].
 
+**Agent-normalized template text**
+
+The parking fee is reduced to [insert fee amount] per night on [weekdays/weekends].
+
 **Important information**
 
 Use this template to indicate a lower parking fee
@@ -2475,6 +3111,8 @@ the Parking module and the highest fee
 amount is loaded.
 Correct fee format examples: USD 16, THB
 7; use currency codes, not symbols
+
+<a id="template-080"></a>
 
 #### Template 80: Limited free parking (192)
 
@@ -2488,6 +3126,10 @@ Correct fee format examples: USD 16, THB
 > of [insert parking fee] applies
 > for each additional vehicle.
 
+**Agent-normalized template text**
+
+Parking is included for 1 vehicle per reservation. A parking fee of [insert parking fee] applies for each additional vehicle.
+
 **Important information**
 
 Use this template to indicate that a parking fee
@@ -2497,6 +3139,8 @@ Parking module > Self-parking > Free > Parking
 per unit > Select 1
 Correct fee format examples: USD 16, THB
 7; use currency codes, not symbols
+
+<a id="template-081"></a>
 
 #### Template 81: Motorcycle parking not permitted (191)
 
@@ -2508,15 +3152,22 @@ Correct fee format examples: USD 16, THB
 > Motorcycle parking is not
 > available.
 
+**Agent-normalized template text**
+
+Motorcycle parking is not available.
+
 **Important information**
 
 Ensure that 'Motorcycle parking only' is not ticked
 in the Parking module in Partner Central.
 
-#### Template 82: Parkingavailable on a limited basis (191)
+<a id="template-082"></a>
+
+#### Template 82: Parking available on a limited basis (191)
 
 - **Topic:** Parking
 - **Source page:** 35
+- **PDF-extracted title:** Parkingavailable on a limited basis (191)
 
 **Template**
 
@@ -2525,11 +3176,17 @@ in the Parking module in Partner Central.
 > Parking reservations are not
 > accepted.
 
+**Agent-normalized template text**
+
+Parkingisavailable onafirst- come, first-served basis. Parking reservations are not accepted.
+
 **Important information**
 
 Onsiteparkingoptionsmustbetickedin
 the Parking module in Partner Central when
 using this template.
+
+<a id="template-083"></a>
 
 #### Template 83: Parking fee is changing (192)
 
@@ -2543,6 +3200,10 @@ using this template.
 > amount] per vehicle [per night,
 > per stay] until [insert date].
 
+**Agent-normalized template text**
+
+The [self/valet] parking fee is [insert current fee amount] per vehicle [per night, per stay] until [insert date].
+
 **Important information**
 
 1. Update the Parking module with the new
@@ -2553,6 +3214,8 @@ Correct fee format examples: USD 16, THB
 Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
+
+<a id="template-084"></a>
 
 #### Template 84: Parking for large vehicles not permitted (191)
 
@@ -2565,6 +3228,10 @@ Correct date format examples: June 10,
 > trailers, and large vehicles is not
 > available.
 
+**Agent-normalized template text**
+
+Parking for SUVs, RVs, buses, trailers, and large vehicles is not available.
+
 **Important information**
 
 1. Ensure that 'RV/bus or truck parking' is not
@@ -2572,6 +3239,8 @@ ticked in the Parking module in Partner
 Central.
 2. Select 'Parking height restrictions apply' in
 the Parking module
+
+<a id="template-085"></a>
 
 #### Template 85: Parking fee for EV vehicles (192)
 
@@ -2587,10 +3256,16 @@ the Parking module
 > is available for [insert amount]
 > per vehicle [per use/per night].
 
+**Agent-normalized template text**
+
+Electric vehicle charging is available for a surcharge. or The electric car charging station is available for [insert amount] per vehicle [per use/per night].
+
 **Important information**
 
 Ensure that 'Electric car charging station' is
 ticked in the Parking module
+
+<a id="template-086"></a>
 
 #### Template 86: Access to partner facilities (191)
 
@@ -2606,6 +3281,10 @@ ticked in the Parking module
 > partner property, located [insert
 > number of yards/feet (insert
 > number of meters)] away.
+
+**Agent-normalized template text**
+
+Guests have access to the [outdoor pool/indoor pool/fitness facility/spa/health club/restaurants] at a nearby partner property, located [insert number of yards/feet (insert number of meters)] away.
 
 **Important information**
 
@@ -2623,6 +3302,8 @@ restaurants module. Amenities listed in SCII text
 should not be ticked in Partner Central as onsite
 amenities if they are actually offsite.
 
+<a id="template-087"></a>
+
 #### Template 87: Age policy for groups of guests (193)
 
 - **Topic:** Policies
@@ -2636,6 +3317,10 @@ amenities if they are actually offsite.
 > this property, except for families
 > with children.
 
+**Agent-normalized template text**
+
+Per property policy, groups of guests under [insert age] years old are not allowed to stay at this property, except for families with children.
+
 **Important information**
 
 May not be used for properties in Australia
@@ -2647,6 +3332,8 @@ template does not meet the needs of the request.
 Escalation Topic: Approval Required for
 Template
 
+<a id="template-088"></a>
+
 #### Template 88: Cooking not permitted (191)
 
 - **Topic:** Policies
@@ -2657,10 +3344,16 @@ Template
 > This property does not permit
 > cooking on the premises.
 
+**Agent-normalized template text**
+
+This property does not permit cooking on the premises.
+
 **Important information**
 
 Ensure that 'cooking facilities' are not listed in
 Room Amenities
+
+<a id="template-089"></a>
 
 #### Template 89: Dress code (191)
 
@@ -2673,11 +3366,17 @@ Room Amenities
 > dress code [in the
 > restaurant/public areas].
 
+**Agent-normalized template text**
+
+This property enforces a strict dress code [in the restaurant/public areas].
+
 **Important information**
 
 If using this template for the restaurant, ensure
 that the Dining and Restaurants module is
 completed (venue details)
+
+<a id="template-090"></a>
 
 #### Template 90: Drones or surveillance devices not allowed (191)
 
@@ -2690,11 +3389,17 @@ completed (venue details)
 > devices are not permitted at this
 > property.
 
+**Agent-normalized template text**
+
+Drones and aerial surveillance devices are not permitted at this property.
+
 **Important information**
 
 May be used only to reference drones, but
 including all aerial surveillance devices will cover
 similar equipment.
+
+<a id="template-091"></a>
 
 #### Template 91: Children can't stay in dormitories (193)
 
@@ -2715,6 +3420,10 @@ similar equipment.
 > and proof of this must be
 > provided on request.
 
+**Agent-normalized template text**
+
+It is the policy of the property that children under [insert age] can only stay in a private room and cannot be accommodated in shared dormitory rooms. Guests under [insert same age as above]mustbeaccompanied by a parent or legal guardian and proof of this must be provided on request.
+
 **Important information**
 
 1. Ensure that Guest Age Settings for shared
@@ -2726,6 +3435,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-092"></a>
 
 #### Template 92: Club/Executive lounge access for children allowed (time frame) (191)
 
@@ -2740,6 +3451,10 @@ Topic: Approval Required for Template
 > Lounge] until [insert time]
 > [and must be accompanied by
 > an adult].
+
+**Agent-normalized template text**
+
+Children aged [insert age range] are allowed in the [Club Lounge/Executive Lounge] until [insert time] [and must be accompanied by an adult].
 
 **Important information**
 
@@ -2759,6 +3474,8 @@ Do not add times like this: 12am, 12pm,
 6am-8 am
 Examples of modified templates
 
+<a id="template-093"></a>
+
 #### Template 93: Minors must be accompanied by an adult (193)
 
 - **Topic:** Policies
@@ -2776,6 +3493,10 @@ Examples of modified templates
 > legal guardian relationship and
 > authorization upon arrival.
 
+**Agent-normalized template text**
+
+It is the property's policy that children under 18 years of age cannot be accommodated at the property without an accompanying parent or legal guardian. Guests are required to provide proof of the parental or legal guardian relationship and authorization upon arrival.
+
 **Important information**
 
 Review current minimum check-in age as listed
@@ -2786,6 +3507,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-094"></a>
 
 #### Template 94: No alcohol served on Poya Day (191)
 
@@ -2800,6 +3523,10 @@ Topic: Approval Required for Template
 > other public holidays as per
 > local law.
 
+**Agent-normalized template text**
+
+This property does not serve alcohol on Poya Day (every full moon day of the month) and other public holidays as per local law.
+
 **Important information**
 
 Use for Sri Lanka properties upon request from
@@ -2809,6 +3536,8 @@ manager/SME/lead may escalate to the Content
 Standards Team if this template does not meet
 the needs of the request. Escalation Topic:
 Approval Required for Template
+
+<a id="template-095"></a>
 
 #### Template 95: No filming/photo shoots (191)
 
@@ -2823,10 +3552,16 @@ Approval Required for Template
 > for private or commercial use
 > without permission.
 
+**Agent-normalized template text**
+
+This property does not allow photo shooting, video recording, interviewing, or filming activities for private or commercial use without permission.
+
 **Important information**
 
 This template may be amended to remove any
 activity that does not apply.
+
+<a id="template-096"></a>
 
 #### Template 96: No smoking (penalty applies) (191)
 
@@ -2840,6 +3575,10 @@ activity that does not apply.
 > subject to penalties (insert
 > amount).
 
+**Agent-normalized template text**
+
+This property has a strict no- smoking policy. Violators will be subject to penalties (insert amount).
+
 **Important information**
 
 Ensure that 'smoke-free property' is selected in
@@ -2848,6 +3587,8 @@ that all rooms are listed as non-smoking.
 Correct fee format examples: USD 25-45;
 use currency codes and not symbols
 Examples of modified templates
+
+<a id="template-097"></a>
 
 #### Template 97: No visitors after designated time (191)
 
@@ -2860,6 +3601,10 @@ Examples of modified templates
 > upon arrival.] No visitors or
 > unregistered guests are allowed
 > in guestrooms [after xx PM].
+
+**Agent-normalized template text**
+
+[All guests must register upon arrival.] No visitors or unregistered guests are allowed in guestrooms [after xx PM].
 
 **Important information**
 
@@ -2877,6 +3622,8 @@ midnight, 10 PM; use AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
 
+<a id="template-098"></a>
+
 #### Template 98: Outside food prohibited (191)
 
 - **Topic:** Policies
@@ -2887,6 +3634,10 @@ Do not add times like this: 12am, 12pm,
 > Outside food is not permitted on
 > the premises.
 
+**Agent-normalized template text**
+
+Outside food is not permitted on the premises.
+
 **Important information**
 
 May be modified to indicate that outside
@@ -2894,6 +3645,8 @@ beverages are not permitted.
 If this pertains to alcohol, however, use the 'no
 alcohol allowed on site' attribute in the Other
 Policies module instead.
+
+<a id="template-099"></a>
 
 #### Template 99: Package delivery policy (191)
 
@@ -2912,9 +3665,15 @@ Policies module instead.
 > responsible for lost or damaged
 > goods.
 
+**Agent-normalized template text**
+
+Parcel deliveries will be accepted only for guests in house or checking in on the day of receipt. Any deliveries received before or after a guest's stay will be returned. The property cannot be held responsible for lost or damaged goods.
+
 **Important information**
 
 Edit as needed.
+
+<a id="template-100"></a>
 
 #### Template 100: Pets not permitted in public areas (191)
 
@@ -2927,12 +3686,18 @@ Edit as needed.
 > areas/the restaurant/the pool
 > area].
 
+**Agent-normalized template text**
+
+Pets not permitted in [public areas/the restaurant/the pool area].
+
 **Important information**
 
 Pets allowed must be selected in the Service
 animal and pets module to use this template.
 May not be modified to indicate Service
 Animals.
+
+<a id="template-101"></a>
 
 #### Template 101: Pet vaccination record required (193)
 
@@ -2945,6 +3710,10 @@ Animals.
 > present their pet's current
 > vaccination record at check-in.
 
+**Agent-normalized template text**
+
+Guests traveling with a pet must present their pet's current vaccination record at check-in.
+
 **Important information**
 
 Complete all relevant Pet attributes in Partner
@@ -2953,6 +3722,8 @@ The following attributes must be selected:
 1. Do you allow pets? > Yes
 2. Restrictions > Other pet restrictions apply
 Do NOT use this template for Service Animals
+
+<a id="template-102"></a>
 
 #### Template 102: Property name change upcoming (193)
 
@@ -2965,6 +3736,10 @@ Do NOT use this template for Service Animals
 > be changing to [insert
 > name] as of [insert date].
 
+**Agent-normalized template text**
+
+The name of this property will be changing to [insert name] as of [insert date].
+
 **Important information**
 
 Ensure that the paragraph text box in Partner
@@ -2973,6 +3748,8 @@ the date the text is loaded.
 Correct date format examples: June 10,
 2025; July 5-August 16, 2025; November 3,
 2025-January 3, 2026
+
+<a id="template-103"></a>
 
 #### Template 103: Texas firearm policies (properties in Texas only) (191)
 
@@ -2991,6 +3768,10 @@ Correct date format examples: June 10,
 > carried firearms] on property
 > premises.
 
+**Agent-normalized template text**
+
+Generic: For information about the property's firearms policy, please check with the property. Specific: This property prohibits carrying [concealed or openly carried firearms] on property premises.
+
 **Important information**
 
 Use of this template for locations other than
@@ -3003,6 +3784,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-104"></a>
 
 #### Template 104: Vacation rental property registry numbers (191)
 
@@ -3017,6 +3800,10 @@ Topic: Approval Required for Template
 > Property Registration
 > Number]
 
+**Agent-normalized template text**
+
+Property Registry Numbers: [insert number(s) with commas separating each Property Registration Number]
+
 **Important information**
 
 Use this template ONLY if the character count
@@ -3029,6 +3816,8 @@ the Fees, policies, and settings module in
 Partner Central under Regulatory Information
 https://expedia.lightning.force.com/lightning/r/Kno
 wledge__kav/ka68b000000LYPQAA4/view
+
+<a id="template-105"></a>
 
 #### Template 105: Age/time restrictions for pool/spa (191)
 
@@ -3043,6 +3832,10 @@ wledge__kav/ka68b000000LYPQAA4/view
 > spa] from [XX AM/PM] to [XX
 > AM/PM] [and must be
 > accompanied by an adult].
+
+**Agent-normalized template text**
+
+Children under [insert maximum age] years old are allowed in the [pool, spa] from [XX AM/PM] to [XX AM/PM] [and must be accompanied by an adult].
 
 **Important information**
 
@@ -3059,6 +3852,8 @@ PM, midnight to 10 AM, 7-9 AM, 8-10 PM, 6
 AM-9 PM; use AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
+
+<a id="template-106"></a>
 
 #### Template 106: Age restrictions for public baths (191)
 
@@ -3077,11 +3872,17 @@ Do not add times like this: 12am, 12pm,
 > accompanying adult of the same
 > sex.
 
+**Agent-normalized template text**
+
+Children younger than [xx] may use public baths with an accompanying adult of the opposite sex. Or Children younger than [xx] may use public baths with an accompanying adult of the same sex.
+
 **Important information**
 
 Public baths should be enabled in the Ryokan
 facilities module in Partner Central when using
 this template.
+
+<a id="template-107"></a>
 
 #### Template 107: Appropriate swimwear required in pool (191)
 
@@ -3097,12 +3898,18 @@ this template.
 > shirts, and long dresses, is not
 > allowed.
 
+**Agent-normalized template text**
+
+It is property policy that appropriate swimwear must be worn in the swimming pool. Any other clothing, including pants, t- shirts, and long dresses, is not allowed.
+
 **Important information**
 
 Ensure that pool is selected in the Pools module
 when using this template.
 Delete the types of clothing not permitted as
 needed per the request.
+
+<a id="template-108"></a>
 
 #### Template 108: Access to amenity by reservation only (pool/fitness center/spa facility/spa tub) (191)
 
@@ -3120,6 +3927,10 @@ needed per the request.
 > available on a first-come,
 > first-served basis].
 
+**Agent-normalized template text**
+
+Access to the [pool/fitness center/spa facility/spa tub] is available by reservation only. [Guests are required to reserve a time slot at the front desk at check-in.][Access is available on a first-come, first-served basis].
+
 **Important information**
 
 Ensure that the referenced amenity is listed in
@@ -3128,6 +3939,8 @@ Ex. If spa tub is listed in the template, check to
 ensure that it is selected in
 the Pools or Spa module, depending on where
 the amenity is located.
+
+<a id="template-109"></a>
 
 #### Template 109: Hasema/burkini not allowed in pool (191) OR Hasema/burkini required in pool area (191)
 
@@ -3144,6 +3957,10 @@ the amenity is located.
 > a [hasema/burkini] in the pool
 > area.
 
+**Agent-normalized template text**
+
+This property does not permit guests to wear a [hasema/burkini] in the pool. This property requires female guests to wear a [hasema/burkini] in the pool area.
+
 **Important information**
 
 Use to indicate relevant policy either excluding or
@@ -3153,6 +3970,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-110"></a>
 
 #### Template 110: Pool hours vary (191)
 
@@ -3164,6 +3983,10 @@ Topic: Approval Required for Template
 > Pool hours are [insert time
 > frame] on [weekends/weekday
 > s/public holidays].
+
+**Agent-normalized template text**
+
+Pool hours are [insert time frame] on [weekends/weekdays/public holidays].
 
 **Important information**
 
@@ -3185,6 +4008,8 @@ AM-9 PM; use AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
 
+<a id="template-111"></a>
+
 #### Template 111: Swim cap required (191)
 
 - **Topic:** Pool/Spa/Fitness
@@ -3199,12 +4024,18 @@ Do not add times like this: 12am, 12pm,
 > should plan to bring their
 > own.]
 
+**Agent-normalized template text**
+
+This property requires guests to wear swim caps in the pool. [Swim caps are not available onsite, and guests should plan to bring their own.]
+
 **Important information**
 
 Ensure that pool amenity is listed the Pools
 module in Partner Central when using this
 template.
 Examples of modified templates
+
+<a id="template-112"></a>
 
 #### Template 112: Swimsuits not allowed in public baths/hot spring (191)
 
@@ -3217,6 +4048,10 @@ Examples of modified templates
 > not permitted for guests using
 > public baths or hot springs.
 
+**Agent-normalized template text**
+
+Clothing, including swimwear, is not permitted for guests using public baths or hot springs.
+
 **Important information**
 
 Public bath(s) or hot springs should be selected
@@ -3226,6 +4061,8 @@ Your manager/SME/lead may escalate to the
 Content Standards Team if this template does not
 meet the needs of the request. Escalation
 Topic: Approval Required for Template
+
+<a id="template-113"></a>
 
 #### Template 113: Buckets for bathing (191)
 
@@ -3237,11 +4074,17 @@ Topic: Approval Required for Template
 > Buckets are provided for
 > bathing.
 
+**Agent-normalized template text**
+
+Buckets are provided for bathing.
+
 **Important information**
 
 Do not select bathtub or shower amenities in
 Partner Central if buckets are the only mode of
 bathing
+
+<a id="template-114"></a>
 
 #### Template 114: Central AC/Heating available (191)
 
@@ -3261,10 +4104,16 @@ bathing
 > (availability based on the
 > season).
 
+**Agent-normalized template text**
+
+This property provides central air conditioning in summer and central heating in the winter. In- room climate control is not available. OR This property provides central air conditioning and heating (availability based on the season).
+
 **Important information**
 
 Ensure that 'in-room climate control' is not
 selected in Partner Central
+
+<a id="template-115"></a>
 
 #### Template 115: Disposable personal items not available (193)
 
@@ -3277,6 +4126,10 @@ selected in Partner Central
 > disposable personal items, such
 > as comb, loofah, shaver, nail
 > file, and shoe mitt.
+
+**Agent-normalized template text**
+
+This property does not provide disposable personal items, such as comb, loofah, shaver, nail file, and shoe mitt.
 
 **Important information**
 
@@ -3303,6 +4156,8 @@ Partner Central).
 Do not add any SCII that duplicates attributes
 in Partner Central.
 
+<a id="template-116"></a>
+
 #### Template 116: Disposable personal items available at front desk (191)
 
 - **Topic:** Room Amenities
@@ -3314,6 +4169,10 @@ in Partner Central.
 > as toothbrush, toothpaste, and
 > razors are available at the front
 > desk (surcharge).
+
+**Agent-normalized template text**
+
+Disposable personal items, such as toothbrush, toothpaste, and razors are available at the front desk (surcharge).
 
 **Important information**
 
@@ -3332,6 +4191,8 @@ Partner Central).
 Do not add any SCII that completely
 duplicates attributes in Partner Central.
 
+<a id="template-117"></a>
+
 #### Template 117: Dry/composting toilet (191)
 
 - **Topic:** Room Amenities
@@ -3341,6 +4202,12 @@ duplicates attributes in Partner Central.
 
 > This property is equipped with
 > a [dry/composting] toilet.
+
+**Agent-normalized template text**
+
+This property is equipped with a [dry/composting] toilet.
+
+<a id="template-118"></a>
 
 #### Template 118: Housekeeping available based on length of stay (191)
 
@@ -3355,11 +4222,17 @@ duplicates attributes in Partner Central.
 > housekeeping fee applies for
 > additional cleaning requests].
 
+**Agent-normalized template text**
+
+Housekeeping is included for stays of [insert number] nights or more. [The listed housekeeping fee applies for additional cleaning requests].
+
 **Important information**
 
 Housekeeping fee must be loaded
 in Housekeeping module if a fee is charged for
 additional cleaning.
+
+<a id="template-119"></a>
 
 #### Template 119: 4x4 vehicle required (193)
 
@@ -3371,6 +4244,10 @@ additional cleaning.
 > Please note: 4x4 vehicles are
 > required to access this property.
 
+**Agent-normalized template text**
+
+Please note: 4x4 vehicles are required to access this property.
+
 **Important information**
 
 This template may be amended to cover modes
@@ -3378,6 +4255,8 @@ of transport not covered in the Other Policies
 module, such as snowmobile, ski lift, etc. Use
 template in line 117 (Properties in car-free zones)
 for other modes of reaching the property.
+
+<a id="template-120"></a>
 
 #### Template 120: Speedboat template (193)
 
@@ -3405,6 +4284,10 @@ for other modes of reaching the property.
 > must pay the speedboat fee at
 > check-out.
 
+**Agent-normalized template text**
+
+Guests must arrange transfers (surcharge) from Male International Airport to the property, which is [XX minutes] away via speedboat. To guarantee transfers, guests must contact the property with their flight details at least [XX hours/XX days] before their expected arrival. The speedboat schedule is limited, so guests planning to arrive after midnight are advised to book an overnight stay in Male or Hulhumale until services resume the next day. Guests must pay the speedboat fee at check-out.
+
 **Important information**
 
 Due to their remote Indian Ocean locations, this
@@ -3424,6 +4307,8 @@ are required to add them to Facility and
 services fees > mandatory fees > transfer
 service fee > mode of travel > adult/child fees
 and ages
+
+<a id="template-121"></a>
 
 #### Template 121: Domestic flight template - Maldives (193)
 
@@ -3459,6 +4344,10 @@ and ages
 > pay the domestic flight fee and
 > the speedboat fee at check-out.
 
+**Agent-normalized template text**
+
+Guests must arrange transfers (surcharge) from Male International Airport to the property, which is [XX minutes] via a flight to Kooddoo/Kadhdhoo/Dharavandhoo/Kaadedhdhoo/Fuvahmulah/domestic airport or Gan/Hanimaadhoo/Villa/Gan International airport, and then [XX minutes] by speedboat to the resort. To guarantee transfers, guests must contact the property with their flight details at least [XX hours/XX days] before their expected arrival. Daily transfer service is offered by Maldivian Airways/FlyMe between [XX AM and XX PM]. Guests arriving outside of these hours are advised to book a hotel room in Male or Hulhumale until services resume. Guests must pay the domestic flight fee and the speedboat fee at check-out.
+
 **Important information**
 
 Due to their remote Indian Ocean locations, this
@@ -3478,6 +4367,8 @@ them to the Facility and services
 fees module > mandatory fees > transfer
 service fee > mode of travel > adult/child fees
 and ages
+
+<a id="template-122"></a>
 
 #### Template 122: Seaplane template - Maldives (193)
 
@@ -3510,6 +4401,10 @@ and ages
 > Guests must pay the seaplane
 > fee at check-out.
 
+**Agent-normalized template text**
+
+Guests must arrange transfers (surcharge) from Male International Airport to the property, which is [XX minutes] away via seaplane. To guarantee transfers, guests must contact the property with their flight details at least [XX days] before their expected arrival. Daily transfer service is offeredbyTransMaldivian Airways/Maldivian Air Taxi between 9 AM and 3 PM. Guests arriving or departing outside of these hours are advised to book a local hotel room in Male or Hulhumale. Luggage in excess of 20 kg/person may incur a fee, payable to the seaplane company during flight check-in. Guests must pay the seaplane fee at check-out.
+
 **Important information**
 
 Due to their remote Indian Ocean locations, this
@@ -3530,6 +4425,8 @@ fees module > mandatory fees > transfer
 service fee > mode of travel > adult/child fees
 and ages
 
+<a id="template-123"></a>
+
 #### Template 123: Shuttle pickup from specific airport/train station (193)
 
 - **Topic:** Transportation
@@ -3542,12 +4439,18 @@ and ages
 > from [insert airport name/train
 > station name] only.
 
+**Agent-normalized template text**
+
+This property offers airport shuttle pickup service from [insert airport name/train station name] only.
+
 **Important information**
 
 Select relevant details in the Airport
 transportation and shuttles or Transportation
 and shuttles modules (train) when using this
 template.
+
+<a id="template-124"></a>
 
 #### Template 124: Theme park shuttle hours (191)
 
@@ -3569,6 +4472,10 @@ template.
 > from [insert time frame] [insert
 > date or date range].
 
+**Agent-normalized template text**
+
+This property's theme park shuttle service is available from [insert time frame] [daily/on weekends/on weekdays]. In addition to the template above, you may use the one below to indicate when a shuttle is not available: This property's theme park shuttle service is not available from [insert time frame] [insert date or date range].
+
 **Important information**
 
 Ensure that Theme park shuttle is selected in
@@ -3580,10 +4487,16 @@ AM-9 PM; use AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
 
+<a id="template-125"></a>
+
 #### Template 125: Theme park shuttle not available (193)
 
 - **Topic:** Not Available/Closed (Temporary Dates/Holidays)
 - **Source page:** 42
+
+**Template status**
+
+No standalone template text is present in the PDF/source row; only Important information is present. This is preserved intentionally rather than inferred.
 
 **Important information**
 
@@ -3598,10 +4511,13 @@ AM-9 PM; use AM and PM.
 Do not add times like this: 12am, 12pm,
 6am-8 am
 
-#### Template 126: Properties in car- free zones (193)
+<a id="template-126"></a>
+
+#### Template 126: Properties in car-free zones (193)
 
 - **Topic:** Transportation
 - **Source page:** 42
+- **PDF-extracted title:** Properties in car- free zones (193)
 
 **Template**
 
@@ -3609,6 +4525,10 @@ Do not add times like this: 12am, 12pm,
 > zone and can be reached only
 > by [train, cable car, taxi, foot,
 > sleigh, etc.]
+
+**Agent-normalized template text**
+
+This property is in a car-free zone and can be reached only by [train, cable car, taxi, foot, sleigh, etc.]
 
 **Important information**
 
@@ -3628,10 +4548,13 @@ Guests should park their car in the public parking
 area located at 123 Smith Street and walk 1.25
 miles (2 kilometers) to the property.
 
-#### Template 127: Train station shuttle drop- off/specific days information (193)
+<a id="template-127"></a>
+
+#### Template 127: Train station shuttle drop-off/specific days information (193)
 
 - **Topic:** Transportation
 - **Source page:** 42
+- **PDF-extracted title:** Train station shuttle drop- off/specific days information (193)
 
 **Template**
 
@@ -3643,6 +4566,10 @@ miles (2 kilometers) to the property.
 > station is available on [insert
 > specific days of the
 > week] only.
+
+**Agent-normalized template text**
+
+This property provides a drop-off shuttle to the train station daily. Or A pick-up shuttle from the train station is available on [insert specific days of the week] only.
 
 **Important information**
 
